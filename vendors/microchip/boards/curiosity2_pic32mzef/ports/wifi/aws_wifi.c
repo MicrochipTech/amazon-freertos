@@ -327,7 +327,7 @@ WIFIReturnCode_t WIFI_Scan( WIFIScanResult_t * pxBuffer,
 
                     if (false == WDRV_WINC_BSSFindInProgress(wifi_handle))
                     {
-                        configPRINTF((("Scan complete, %d AP(s) found\r\n", WDRV_WINC_BSSFindGetNumBSSResults(wifi_handle))));
+                        configPRINTF (("Scan complete, %d AP(s) found\r\n", WDRV_WINC_BSSFindGetNumBSSResults(wifi_handle)));
                         state = WIFI_SCAN_STATE_SCAN_GET_RESULTS;
                     }
                     break;
@@ -601,7 +601,7 @@ void AWS_MCHP_ConnectEvent(void)
 {
      wifiConnected = true;
 	 tryReconnect = 5;
-     m2m_wifi_get_system_time();
+     WDRV_WINC_SystemTimeGetCurrent(wifi_handle, NULL);
      xTaskNotify( waiting_task, WDRV_MAC_EVENT_CONNECT_DONE, eSetBits );
 }
 
@@ -1032,7 +1032,9 @@ static void wifi_update()
  */
 WIFIReturnCode_t WIFI_Off( void )
 {
-    //return eWiFiSuccess;
+#ifdef WDRV_WINC_DEVICE_WINC1500
+    return eWiFiSuccess;
+#endif
     
     if (DRV_HANDLE_INVALID == wifi_handle)
     {
@@ -1169,6 +1171,7 @@ WIFIReturnCode_t WIFI_ConnectAP( const WIFINetworkParams_t * const pxNetworkPara
         }
         
          xSemaphoreGive(xWiFiSemaphore);      
+         vTaskDelay(5000);// WIFI wait for DHCP
         return eWiFiSuccess;
 
     }
@@ -1791,6 +1794,10 @@ static void APP_ExampleDHCPAddressEventCallback(DRV_HANDLE handle, uint32_t ipAd
     
     memcpy(wifiIPv4Address, &ipAddress, sizeof(wifiIPv4Address));
     configPRINTF(("IP address is %s\r\n", inet_ntop(AF_INET, &ipAddress, s, sizeof(s))));
+    
+    AWS_MCHP_ConnectEvent();
+    if (g_network_change_cb != NULL)
+        g_network_change_cb(AWSIOT_NETWORK_TYPE_WIFI, eNetworkStateEnabled);
 }
  
 
@@ -1849,15 +1856,13 @@ static void APP_ExampleDHCPAddressEventCallback(DRV_HANDLE handle, uint32_t ipAd
 {
     if (WDRV_WINC_CONN_STATE_CONNECTED == currentState)
     {
-        configPRINTF(("[%s] Connected\r\n", __func__));
-        AWS_MCHP_ConnectEvent();
-        if (g_network_change_cb != NULL)
-            g_network_change_cb(AWSIOT_NETWORK_TYPE_WIFI, eNetworkStateEnabled);
+        configPRINTF(("[%s] AP Connected\r\n", __func__));
+        
        
     }
     else if (WDRV_WINC_CONN_STATE_DISCONNECTED == currentState)
     {
-        configPRINTF(("[%s] Disconnect\r\n", __func__));
+        configPRINTF(("[%s] AP Disconnect\r\n", __func__));
         AWS_MCHP_DisconnectEvent();
         if (g_network_change_cb != NULL)
             g_network_change_cb(AWSIOT_NETWORK_TYPE_WIFI, eNetworkStateDisabled);

@@ -103,6 +103,10 @@ typedef enum{
     /*!<
         Semaphore used for receive operation wait
     */
+    RECV_BUF_SEM,
+    /*!<
+        Semaphore used for protect receive buffer
+    */
     MAX_SEM
 
 }tenuSocketSemaphoreType;
@@ -137,6 +141,7 @@ typedef struct xSocketsSockaddr
 static SemaphoreHandle_t xSocketsSemaphore = NULL;
 static StaticSemaphore_t xSocketsSemaphoreBuffer;
 static const TickType_t xSocketSemConnectWaitTicks = SOCKET_CONNECT_TIMEOUT;
+static const TickType_t xSocketSemBufWaitTicks = ( pdMS_TO_TICKS( 10000 ) );
 // const TickType_t xSemaphoreWaitTicks = pdMS_TO_TICKS( 5000 );
 static SocketCntx_t xSocketCntx[TCP_SOCK_MAX] = {{0},};
 extern SemaphoreHandle_t xWiFiSemaphore;
@@ -302,33 +307,37 @@ int32_t SOCKETS_Close( Socket_t xSocket )
     while(xSocketCntx[sock].socketSendOutstanding!=0)vTaskDelay(10);
 
     if( xSemaphoreTake( xWiFiSemaphore, xSemaphoreWaitTicks ) == pdTRUE )
-    { 
-       configPRINTF(("Shutdown Called\r\n"));  
-      if (shutdown(sock) == 0)
+    {
+        configPRINTF(("Socket Close Called\r\n"));  
+        ret = shutdown((SOCKET)sock);
+        xSemaphoreGive(xWiFiSemaphore);
+        if (ret == 0)
         {
-             if(xSocketCntx[sock].recvBuffer != NULL)
-            vPortFree(xSocketCntx[sock].recvBuffer);
-             xSocketCntx[sock].recvBuffer=NULL;
-             
-        for(i =0 ; i <MAX_SEM ; i++)
-        {
-            if ((xSocketCntx[sock].xSocketsOpSemaphore)[i] != NULL)
-                vSemaphoreDelete((xSocketCntx[sock].xSocketsOpSemaphore)[i]);
-            (xSocketCntx[sock].xSocketsOpSemaphore)[i]=NULL;
-        }
-        configPRINTF(("Shutdown Completed\r\n"));  
-        
-        ret = SOCKETS_ERROR_NONE;
+            xSocketCntx[sock].socketConnected= 0;
+            
+            if( xSemaphoreTake( (xSocketCntx[sock].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
+            {
+                if(xSocketCntx[sock].recvBuffer != NULL)
+                    vPortFree(xSocketCntx[sock].recvBuffer);
+                ret = SOCKETS_ERROR_NONE;
+                xSemaphoreGive(xSocketCntx[sock].xSocketsOpSemaphore[RECV_BUF_SEM]);
+            }
+            else
+            {
+                configPRINTF(("Timeout to free receive buffer\r\n")); 
+                ret = SOCKETS_EINVAL;
+            } 
+
+             configPRINTF(("Socket Close Completed \r\n"));  
         }
         else
         {
-           ret = SOCKETS_EINVAL;
+            ret = SOCKETS_EINVAL;
         }
-        xSemaphoreGive(xWiFiSemaphore);
     }
     else
     {
-        return SOCKETS_EWOULDBLOCK;
+        ret = SOCKETS_EWOULDBLOCK;
     }
     
   
@@ -455,10 +464,21 @@ void socket_recv_command_task (void * params)
     SOCKET Socket =  (( SOCKET ) params);
     if( xSemaphoreTake( xWiFiSemaphore, xSemaphoreWaitTicks ) == pdTRUE )
     {    
-        lStatus = recv( Socket, xSocketCntx[Socket].recvBuffer, RECV_BUFFER_SIZE, 0 );
-        if(lStatus !=M2M_SUCCESS)
+        if (Socket >=0)
         {
-            configPRINTF( ( "recv fail, ret = %d\r\n", lStatus ) );
+            if( xSemaphoreTake( (xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
+            {  
+                if (xSocketCntx[Socket].recvBuffer != NULL)
+                {
+                    lStatus = recv( Socket, xSocketCntx[Socket].recvBuffer, RECV_BUFFER_SIZE, 0 );
+                    if(lStatus !=M2M_SUCCESS)
+                    {
+                        configPRINTF( ( "recv fail, ret = %d\r\n", lStatus ) );
+                    }
+                }
+                xSemaphoreGive(xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]);
+            }
+            
         }
         xSemaphoreGive(xWiFiSemaphore);
     }
@@ -490,23 +510,39 @@ int32_t SOCKETS_Recv( Socket_t xSocket,
     {  
             //check if received a packet before.
         if(xSocketCntx[Socket].socketRecvLength > 0)
-        {
+        {    
             if(xSocketCntx[Socket].socketRecvLength <= xBufferLength)
             {
                 // the buffer supplied is enough to accommdate all the data received
                 lStatus = xSocketCntx[Socket].socketRecvLength;
-                memcpy((uint8_t*)pvBuffer, xSocketCntx[Socket].recvBuffer+xSocketCntx[Socket].socketRecvOffset, lStatus);
-                xSocketCntx[Socket].socketRecvLength =0;
-                xSocketCntx[Socket].socketRecvOffset =0;
+                if( xSemaphoreTake( (xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
+                {  
+                    memcpy((uint8_t*)pvBuffer, xSocketCntx[Socket].recvBuffer+xSocketCntx[Socket].socketRecvOffset, lStatus);
+
+                    xSocketCntx[Socket].socketRecvLength =0;
+                    xSocketCntx[Socket].socketRecvOffset =0;
+                    xSemaphoreGive(xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]);
+                }
+                else
+                {
+                     lStatus = 0;
+                }
             }
             else
             {
+                if( xSemaphoreTake( (xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
+                {  
                     // Buffer is smaller than all the received data.
                     lStatus = xBufferLength;
                     memcpy((uint8_t*)pvBuffer, xSocketCntx[Socket].recvBuffer+xSocketCntx[Socket].socketRecvOffset, lStatus);
                     xSocketCntx[Socket].socketRecvLength -= xBufferLength;
-                xSocketCntx[Socket].socketRecvOffset+= xBufferLength;
-                
+                    xSocketCntx[Socket].socketRecvOffset+= xBufferLength;
+                    xSemaphoreGive(xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]);
+                 }
+                else
+                {
+                     lStatus = 0;
+                }
             }
             
             xSemaphoreGive((xSocketCntx[Socket].xSocketsOpSemaphore)[RECV_SEM]);
@@ -519,7 +555,7 @@ int32_t SOCKETS_Recv( Socket_t xSocket,
                          "socket_recv_command_task",
                          512,
                          Socket,
-                         tskIDLE_PRIORITY, NULL );          
+                         tskIDLE_PRIORITY+3, NULL );          
         }
         
         //indicate recv called, don't call again until data is received.
@@ -529,37 +565,45 @@ int32_t SOCKETS_Recv( Socket_t xSocket,
         if(xSocketCntx[Socket].socketRecvTO> 0){
 
             (xSocketCntx[Socket].waitingTask)[RECV_SEM] = xTaskGetCurrentTaskHandle();
-            
+                
             xTaskNotifyWait( WDRV_MAC_EVENT_SOCKET_RECV, WDRV_MAC_EVENT_SOCKET_RECV, &evBits, xSocketCntx[Socket].socketRecvTO);
 
             if( ( evBits & WDRV_MAC_EVENT_SOCKET_RECV ) == 0 )
             {
                 /* Timed out. */
                 configPRINTF( ( "recv timeout\r\n" ) );
-                lStatus =  SOCKETS_SOCKET_ERROR;
-            }
-           else
-           {
-            /* Socket recv callback completed */
-
-            if(xSocketCntx[Socket].socketRecvLength <= xBufferLength)
-            {
-                // the buffer supplied is enough to accommdate all the data received
-                lStatus = xSocketCntx[Socket].socketRecvLength;
-                xSocketCntx[Socket].socketRecvLength =0;
-                xSocketCntx[Socket].socketRecvOffset =0;
-
-
+                lStatus =  SOCKETS_EWOULDBLOCK;
             }
             else
             {
-                // Buffer is smaller than all the received data.
-                xSocketCntx[Socket].socketRecvLength -= xBufferLength;
-            xSocketCntx[Socket].socketRecvOffset+= xBufferLength;
-            lStatus = xBufferLength;
-            }
+                /* Socket recv callback completed */
 
-            memcpy((uint8_t*)pvBuffer, xSocketCntx[Socket].recvBuffer, lStatus);
+               if(xSocketCntx[Socket].socketRecvLength <= xBufferLength)
+                {
+                    // the buffer supplied is enough to accommdate all the data received
+                    lStatus = xSocketCntx[Socket].socketRecvLength;
+                    xSocketCntx[Socket].socketRecvLength =0;
+                    xSocketCntx[Socket].socketRecvOffset =0;
+
+
+                }
+                else
+                {
+                   // Buffer is smaller than all the received data.
+                   xSocketCntx[Socket].socketRecvLength -= xBufferLength;
+                    xSocketCntx[Socket].socketRecvOffset+= xBufferLength;
+                    lStatus = xBufferLength;
+                }
+
+               if( xSemaphoreTake( (xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
+               { 
+                   memcpy((uint8_t*)pvBuffer, xSocketCntx[Socket].recvBuffer, lStatus);
+                   xSemaphoreGive(xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]);
+               }
+               else
+                {
+                     lStatus = 0;
+                }
             }
               
         }
@@ -819,22 +863,29 @@ int32_t SOCKETS_Shutdown( Socket_t xSocket,
 
     if( xSemaphoreTake( xWiFiSemaphore, xSemaphoreWaitTicks ) == pdTRUE )
     {
-        configPRINTF(("Shutdown Called 1\r\n"));  
-
-        if (shutdown((SOCKET)Socket) == 0)
+        configPRINTF(("Socket Shutdown Called\r\n"));  
+        ret = shutdown((SOCKET)Socket);
+        xSemaphoreGive(xWiFiSemaphore);
+        if (ret == 0)
         {
             xSocketCntx[Socket].shutdownCalled = 1;
             xSocketCntx[Socket].socketConnected= 0;
-            if(xSocketCntx[Socket].recvBuffer != NULL)
-                vPortFree(xSocketCntx[Socket].recvBuffer);
-            for(i =0 ; i <MAX_SEM ; i++)
+            
+            if( xSemaphoreTake( (xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]), xSocketSemBufWaitTicks ) == pdTRUE )
             {
-                if ((xSocketCntx[Socket].xSocketsOpSemaphore)[i] != NULL)
-                    vSemaphoreDelete((xSocketCntx[Socket].xSocketsOpSemaphore)[i]);
+                if(xSocketCntx[Socket].recvBuffer != NULL)
+                    vPortFree(xSocketCntx[Socket].recvBuffer);
+				xSocketCntx[Socket].recvBuffer=NULL;
+                ret = SOCKETS_ERROR_NONE;
+                xSemaphoreGive(xSocketCntx[Socket].xSocketsOpSemaphore[RECV_BUF_SEM]);
             }
+            else
+            {
+                configPRINTF(("Timeout to free receive buffer\r\n")); 
+                ret = SOCKETS_EINVAL;
+            } 
 
-            ret = SOCKETS_ERROR_NONE;
-            configPRINTF(("Shutdown Completed 1\r\n"));  
+             configPRINTF(("Socket Shutdown Completed\r\n"));  
         }
         else
         {
@@ -843,10 +894,10 @@ int32_t SOCKETS_Shutdown( Socket_t xSocket,
     }
     else
     {
-        return SOCKETS_EWOULDBLOCK;
+        ret = SOCKETS_EWOULDBLOCK;
     }
     
-    xSemaphoreGive(xWiFiSemaphore);
+    
 
     return ret;
 }
