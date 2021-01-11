@@ -37,14 +37,12 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 
 
 
-
+#define TCPIP_STACK_USE_EXTERNAL_HEAP
 
 #include <string.h>
 #include <stdlib.h>
 
-#define TCPIP_STACK_USE_EXTERNAL_HEAP
-
-#if !defined(__PIC32C__) && !defined(__SAMA5D2__)
+#if defined(__mips__)
 #include <sys/kmem.h>
 #endif
 

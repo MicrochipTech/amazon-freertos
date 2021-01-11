@@ -39,25 +39,10 @@ children:
   - type: Boolean
     attributes: {id: UART_RING_BUFFER_ENABLE}
     children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: readOnly}
-        children:
-        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: uart4, value: 'true'}
-  - type: Integer
-    attributes: {id: UART_RX_RING_BUFFER_SIZE}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
   - type: File
     attributes: {id: UART_SOURCE1}
     children:
@@ -67,18 +52,15 @@ children:
         attributes: {id: source}
         children:
         - {type: Value, value: ../peripheral/uart_6418/templates/plib_uart_ring_buffer.c.ftl}
-  - type: Integer
-    attributes: {id: UART_TX_RING_BUFFER_SIZE}
+  - type: Boolean
+    attributes: {id: USART_INTERRUPT_MODE}
     children:
     - type: Attributes
       children:
       - type: Boolean
-        attributes: {id: visible}
+        attributes: {id: readOnly}
         children:
         - {type: Value, value: 'true'}
-  - type: Boolean
-    attributes: {id: USART_INTERRUPT_MODE}
-    children:
     - type: Values
       children:
       - type: Dynamic

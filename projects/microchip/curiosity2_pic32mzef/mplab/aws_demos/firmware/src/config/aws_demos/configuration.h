@@ -149,7 +149,7 @@ extern "C" {
 // *****************************************************************************
 /*** TCPIP MAC Configuration ***/
 #define TCPIP_EMAC_TX_DESCRIPTORS				    8
-#define TCPIP_EMAC_RX_DESCRIPTORS				    6
+#define TCPIP_EMAC_RX_DESCRIPTORS				    8
 #define TCPIP_EMAC_RX_DEDICATED_BUFFERS				4
 #define TCPIP_EMAC_RX_INIT_BUFFERS				    0
 #define TCPIP_EMAC_RX_LOW_THRESHOLD				    1
@@ -181,10 +181,6 @@ extern "C" {
 #define TCPIP_INTMAC_MODULE_ID		    			_ETH_BASE_ADDRESS
 #define TCPIP_INTMAC_PERIPHERAL_CLK  				120000000
 
-#define DRV_ETHMAC_INSTANCES_NUMBER				1
-#define DRV_ETHMAC_CLIENTS_NUMBER				1
-#define DRV_ETHMAC_INDEX	    	    		1
-#define DRV_ETHMAC_PERIPHERAL_ID				1
 #define DRV_ETHMAC_INTERRUPT_SOURCE				_ETHERNET_VECTOR
 
 #define DRV_ETHMAC_INTERRUPT_MODE        			true
@@ -196,9 +192,6 @@ extern "C" {
 
 
 
-#define TCPIP_IF_ETHMAC
-
-                                                  
 #define TCPIP_INTMAC_PHY_CONFIG_FLAGS              	( 0 \
                                                     | DRV_ETHPHY_CFG_AUTO \
                                                     )

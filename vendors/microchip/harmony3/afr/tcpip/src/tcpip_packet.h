@@ -305,6 +305,7 @@ TCPIP_MAC_DATA_SEGMENT* TCPIP_PKT_DataSegmentGet(TCPIP_MAC_PACKET* pPkt, const u
 // simple helper to calculate the payload length of a packet
 uint16_t        TCPIP_PKT_PayloadLen(TCPIP_MAC_PACKET* pPkt);
 
+uint16_t    TCPIP_PKT_SegLoadOffset(void);
 
 // debugging, tracing, logging
 //
@@ -440,6 +441,7 @@ bool    TCPIP_PKT_FlightLogTypeSet(TCPIP_PKT_LOG_TYPE logType, bool clrPersist);
 // clears all log
 // if clrPersist is true, it clears persistent entries too
 void    TCPIP_PKT_FlightLogClear(bool clrPersist);
+void    TCPIP_PKT_FlightLogReset(bool resetMasks);
 
 #if defined(TCPIP_PACKET_ALLOCATION_TRACE_ENABLE)
 

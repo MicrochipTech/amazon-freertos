@@ -159,7 +159,7 @@ Function:
     It is up to each module to set the specific data associated with this entry.
     This function only creates a new node and inserts it properly in the notification list.
 */
-SGL_LIST_NODE*      TCPIP_Notification_Add(PROTECTED_SINGLE_LIST* notifyList, TCPIP_STACK_HEAP_HANDLE heapH, size_t nBytes);
+SGL_LIST_NODE*      TCPIP_Notification_Add(PROTECTED_SINGLE_LIST* notifyList, TCPIP_STACK_HEAP_HANDLE heapH, void* pContent, size_t nBytes);
 
 
 // *****************************************************************************
@@ -194,6 +194,7 @@ Function:
     This function only removes the node from the notification list and then frees the associated memory
 */
 bool      TCPIP_Notification_Remove(SGL_LIST_NODE* node, PROTECTED_SINGLE_LIST* notifyList, TCPIP_STACK_HEAP_HANDLE heapH);
+bool      TCPIP_Notification_CbackRemove(SGL_LIST_NODE* node, PROTECTED_SINGLE_LIST* notifyList, TCPIP_STACK_HEAP_HANDLE heapH, void (*pCback)(SGL_LIST_NODE* node));
 
 // *****************************************************************************
 /*

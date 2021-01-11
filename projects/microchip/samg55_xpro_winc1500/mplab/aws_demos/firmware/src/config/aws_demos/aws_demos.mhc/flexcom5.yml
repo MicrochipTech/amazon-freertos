@@ -13,6 +13,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/spi/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -38,6 +42,14 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/spi/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -63,6 +75,14 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/spi/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -78,10 +98,52 @@ children:
   - type: KeyValueSet
     attributes: {id: FLEXCOM_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: flexcom5, value: '2'}
+  - type: Integer
+    attributes: {id: FLEXCOM_SPI_BAUD_RATE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Comment
+    attributes: {id: FLEXCOM_SPI_CLOCK_MODE_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_CSR_BITS}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_CSR_CPOL}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_CSR_INDEX}
     children:
@@ -89,6 +151,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom5, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_CSR_NCPHA}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_CSR_SCBR_VALUE}
     children:
@@ -105,10 +176,41 @@ children:
         attributes: {id: max}
         children:
         - {type: Value, value: '255'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: flexcom5, value: '255'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_MR_BRSRCCLK}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Combo
+    attributes: {id: FLEXCOM_SPI_MR_MSTR}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_SPI_MR_PCS}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEXCOM_SPI_PERIPHERAL_CLOCK}
     children:
@@ -121,6 +223,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -138,6 +244,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -195,6 +305,16 @@ children:
   - type: Boolean
     attributes: {id: SPI_INTERRUPT_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -206,8 +326,26 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom5, value: '&(FLEXCOM5_REGS->FLEX_SPI_TDR)'}
+  - type: Boolean
+    attributes: {id: USE_SPI_DMA}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
 - type: Attachments
   children:
+  - type: DirectCapability
+    attributes: {id: FLEXCOM5_I2C}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
   - type: DirectCapability
     attributes: {id: FLEXCOM5_SPI}
     children:
@@ -221,5 +359,14 @@ children:
         attributes: {id: targetAttachmentID}
         children:
         - {type: Value, value: drv_spi_SPI_dependency}
+  - type: DirectCapability
+    attributes: {id: FLEXCOM5_UART}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
 - type: ElementPosition
   attributes: {x: '327', y: '510', id: flexcom5}

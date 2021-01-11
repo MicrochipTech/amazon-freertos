@@ -589,7 +589,7 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f1" displayName="abstractions" projectFiles="true">
-            <logicalFolder name="f3" displayName="ble_hal" projectFiles="true">
+            <logicalFolder name="f2" displayName="ble_hal" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_avsrc_profile.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_gatt_client.h</itemPath>
@@ -601,7 +601,7 @@
                 <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_manager_types.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="common_io" projectFiles="true">
+            <logicalFolder name="f3" displayName="common_io" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_adc.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_battery.h</itemPath>
@@ -624,7 +624,7 @@
                 <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_watchdog.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="pkcs11" projectFiles="true">
+            <logicalFolder name="f1" displayName="pkcs11" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/pkcs11/include/iot_pkcs11_pal.h</itemPath>
               </logicalFolder>
@@ -632,7 +632,7 @@
                 <itemPath>../../../../../../../libraries/abstractions/pkcs11/mbedtls/threading_alt.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="platform" projectFiles="true">
+            <logicalFolder name="f4" displayName="platform" projectFiles="true">
               <logicalFolder name="f1" displayName="freertos" projectFiles="true">
                 <logicalFolder name="f1" displayName="include" projectFiles="true">
                   <logicalFolder name="f1" displayName="platform" projectFiles="true">
@@ -658,7 +658,7 @@
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="posix" projectFiles="true">
+            <logicalFolder name="f5" displayName="posix" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <logicalFolder name="f1" displayName="FreeRTOS_POSIX" projectFiles="true">
                   <logicalFolder name="f1" displayName="sys" projectFiles="true">
@@ -677,14 +677,14 @@
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="secure_sockets" projectFiles="true">
+            <logicalFolder name="f6" displayName="secure_sockets" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/include/iot_secure_sockets.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/include/iot_secure_sockets_config_defaults.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/include/iot_secure_sockets_wrapper_metrics.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="wifi" projectFiles="true">
+            <logicalFolder name="f7" displayName="wifi" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/wifi/include/iot_wifi.h</itemPath>
               </logicalFolder>
@@ -1285,8 +1285,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
         <pack name="SAMG_DFP" vendor="Microchip" version="3.3.42"/>
+        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1340,7 +1340,7 @@
         <property key="programoptions.preserveuserid" value="false"/>
       </AtmelIceTool>
       <C32>
-        <property key="additional-warnings" value="true"/>
+        <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
@@ -1351,10 +1351,10 @@
                   value="../src/config/aws_demos/library/cryptoauthlib;../src/config/aws_demos/library/cryptoauthlib/crypto;../src/config/aws_demos/library/cryptoauthlib/pkcs11;../../../../../../../demos/include;../../../../../../../freertos_kernel/include;../../../../../../../libraries/abstractions/platform/freertos/include;../../../../../../../libraries/abstractions/secure_sockets/include;../../../../../../../libraries/abstractions/pkcs11/include;../../../../../../../libraries/c_sdk/aws/defender/include;../../../../../../../libraries/c_sdk/aws/shadow/include;../../../../../../../libraries/c_sdk/standard/common/include;../../../../../../../libraries/c_sdk/standard/https/include;../../../../../../../libraries/c_sdk/standard/mqtt/include;../../../../../../../libraries/c_sdk/standard/serializer/include;../../../../../../../libraries/freertos_plus/aws/greengrass/include;../../../../../../../libraries/freertos_plus/aws/ota/include;../../../../../../../libraries/freertos_plus/standard/crypto/include;../../../../../../../libraries/freertos_plus/standard/utils/include;../../../../../../../libraries/freertos_plus/standard/tls/include;../../../../../../../libraries/freertos_plus/standard/pkcs11/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include;../../../../../../../libraries/abstractions/platform/include;../../../../../../../libraries/c_sdk/standard/common/include/private;../../../../../../../libraries/c_sdk/standard/common/include/types;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC;../../../../../../../demos/network_manager;../../../../../../../demos/https;../../../../../../../demos/tcp;../../../../../../../libraries/3rdparty/jsmn;../../../../../../../libraries/3rdparty/mbedtls/include;../../../../../../../libraries/3rdparty/tinycbor;../../../../../../../libraries/3rdparty/pkcs11;../../../../../../../libraries/3rdparty/tinycrypt/asn1;../../../../../../../libraries/3rdparty/tinycrypt/lib/include;../../../../../../../demos/dev_mode_key_provisioning/include;../../../../../../../libraries/abstractions/pkcs11/mbedtls;../../../../../../../libraries/3rdparty/http_parser;../../../../../../../libraries/freertos_plus/aws/ota/src;../../../../../../../vendors/microchip/boards/samg55_xpro/ports/pkcs11;../../../../../../../libraries/abstractions/wifi/include;../../../../../../../vendors/microchip/boards/samg55_xpro/ports/wifi;../../../../../../../vendors/microchip/harmony3/afr;../../../../../../../vendors/microchip/boards/samg55_xpro/aws_demos/config_files;../../../../../../../vendors/microchip/boards/samg55_xpro/aws_demos/application_code;../../../../../../../vendors/microchip/boards/samg55_xpro/ports/posix;../../../../../../../freertos_kernel/portable/GCC/ARM_CM4F;../../../../../../../vendors/microchip/harmony3/afr/tcpip/src/common;../src;../src/config/aws_demos;../src/packs/ATSAMG55J19_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/aws_demos/driver/winc/include/drv/spi_flash;../src/config/aws_demos/driver/winc/include/drv/socket;../src/config/aws_demos/driver/winc/include/drv/driver;../src/config/aws_demos/driver/winc/include/drv/common;../src/config/aws_demos/driver/winc/include/drv/bsp/include;../src/config/aws_demos/driver/winc/include/drv/bsp;../src/config/aws_demos/driver/winc/include/dev;../src/config/aws_demos/driver/winc/include/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="isolate-each-function" value="true"/>
+        <property key="isolate-each-function" value="false"/>
         <property key="make-warnings-into-errors" value="false"/>
         <property key="optimization-level" value="-O1"/>
-        <property key="place-data-into-section" value="true"/>
+        <property key="place-data-into-section" value="false"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros" value=";PIC32_USE_ECC;__free_rtos__"/>
@@ -1504,8 +1504,6 @@
         <property key="memories.programmemory.ranges" value="400000-47ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/AWS3_2/amazon-freertos/projects/microchip/samg55_xpro_winc1500/mplab/aws_demos/firmware/aws_demos.X/debug/aws_demos/aws_demos_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

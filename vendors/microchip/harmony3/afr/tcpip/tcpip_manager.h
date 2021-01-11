@@ -2518,7 +2518,7 @@ unsigned int TCPIP_STACK_VersionGet ( const SYS_MODULE_INDEX index );
     None.
 */
 
-char * TCPIP_STACK_VersionStrGet ( const SYS_MODULE_INDEX index );
+const char * TCPIP_STACK_VersionStrGet ( const SYS_MODULE_INDEX index );
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus

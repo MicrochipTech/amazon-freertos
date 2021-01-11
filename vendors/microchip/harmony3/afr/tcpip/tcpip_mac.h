@@ -231,6 +231,11 @@ typedef enum
 
 
 // *****************************************************************************
+typedef struct
+{
+    struct _tag_TCPIP_MAC_PACKET*   segmentPktPtr;
+    uint32_t                        segmentDataGap[];
+}TCPIP_MAC_SEGMENT_PAYLOAD;
 /*  TCPIP MAC Data Segment
 
   Summary:
@@ -304,8 +309,9 @@ typedef struct _tag_MAC_DATA_SEGMENT
                 more than 64 KB apart! */
     uint16_t                 segLoadOffset;  
 
+    uint16_t                 segAllocSize;  
     /*  Additional client segment data. Ignored by the MAC driver. */
-    uint8_t                  segClientData[4];
+    uint8_t                  segClientData[2];
 
     /*  Additional client segment payload; Ignored by the MAC driver. */
     /*  uint8_t                  segClientLoad[]; */
@@ -569,29 +575,32 @@ typedef enum
     /* RX: packet was dropped because of wrong interface source address */
     TCPIP_MAC_PKT_ACK_SOURCE_ERR        = -11,
 
+    TCPIP_MAC_PKT_ACK_DEST_ERR          = -12,
     /* RX: packet was dropped because the type was unknown  */
-    TCPIP_MAC_PKT_ACK_TYPE_ERR          = -12,
+    TCPIP_MAC_PKT_ACK_TYPE_ERR          = -13,
 
     /* RX: internal packet structure error  */
-    TCPIP_MAC_PKT_ACK_STRUCT_ERR        = -13,  
+    TCPIP_MAC_PKT_ACK_STRUCT_ERR        = -14,  
 
     /* RX: the packet protocol couldn't find a destination for it */
-    TCPIP_MAC_PKT_ACK_PROTO_DEST_ERR    = -14,
+    TCPIP_MAC_PKT_ACK_PROTO_DEST_ERR    = -15,
 
     /* RX: the packet too fragmented  */
-    TCPIP_MAC_PKT_ACK_FRAGMENT_ERR      = -15, 
+    TCPIP_MAC_PKT_ACK_FRAGMENT_ERR      = -16, 
 
     /* RX: the packet destination is closing */
-    TCPIP_MAC_PKT_ACK_PROTO_DEST_CLOSE  = -16,
+    TCPIP_MAC_PKT_ACK_PROTO_DEST_CLOSE  = -17,
 
     /* RX: memory allocation error */
-    TCPIP_MAC_PKT_ACK_ALLOC_ERR         = -17,  
+    TCPIP_MAC_PKT_ACK_ALLOC_ERR         = -18,  
 
     /* TX: Packet was rejected by the IP layer */
-    TCPIP_MAC_PKT_ACK_IP_REJECT_ERR     = -18,  
+    TCPIP_MAC_PKT_ACK_IP_REJECT_ERR     = -19,  
 
     /* RX: packet was dropped because it was processed externally */
-    TCPIP_MAC_PKT_ACK_EXTERN           = -19,
+    TCPIP_MAC_PKT_ACK_EXTERN            = -20,
+    TCPIP_MAC_PKT_ACK_BRIDGE_DONE       = -21,
+    TCPIP_MAC_PKT_ACK_BRIDGE_DISCARD    = -22,
 }TCPIP_MAC_PKT_ACK_RES;
 
 
@@ -832,8 +841,18 @@ struct _tag_TCPIP_MAC_PACKET
 
     /* Client/padding data; ignored by the MAC driver.
        It can be used by the packet client. */
-    uint16_t                        pktClientData;
+    union
+    {
+        uint16_t            pktClientData[3];
+        struct
+        {
+            uint16_t        ipv4PktData;
+            uint16_t        ipv6PktData;
+            uint16_t        modPktData;
+        };
+    };
 
+    uint8_t                         pktPriority;
     /* Additional client packet payload, variable packet data.
        Ignored by the MAC driver. */
     uint32_t                        pktClientLoad[];
@@ -1528,7 +1547,6 @@ typedef enum
 typedef struct
 {
     /*  number of the interfaces supported in this session */
-    int     nIfs;         
 
     /*  malloc type allocation function */
     TCPIP_MAC_HEAP_MallocF  mallocF;
@@ -1561,20 +1579,24 @@ typedef struct
     /*  Parameter to be used when the event function is called. */
     const void*             eventParam;    
 
+    uint16_t                nIfs;         
     /*  Module identifier. 
         Allows multiple channels/ports, etc. MAC support. */
-    unsigned int            moduleId;
+    uint16_t                moduleId;
 
     /*  index of the current interface */
-    int                     netIx;
+    uint16_t                netIx;
 
     /*  current action for the MAC/stack */
-    TCPIP_MAC_ACTION        macAction;
+    uint16_t                segLoadOffset;
+
+    uint8_t                 macAction;
 
     /*  The power mode for this interface to go to. 
         Valid only if stackAction == init/reinit. 
         Ignored for deinitialize operation. */
-    TCPIP_MAC_POWER_MODE    powerMode;
+    uint8_t                 powerMode;
+
 
     /*  Physical address of the interface. 
         MAC sets this field as part of the initialization function. 
@@ -1644,6 +1666,8 @@ typedef struct
     /* Tx Checksum offload Enable */
     TCPIP_MAC_CHECKSUM_OFFLOAD_FLAGS    checksumOffloadTx;
     
+    uint8_t macTxPrioNum;
+    uint8_t macRxPrioNum;
 }TCPIP_MAC_PARAMETERS;
 
 

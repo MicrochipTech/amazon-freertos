@@ -41,20 +41,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4F48FBDFDBFB41CD9D96FF9B1CBED62C
-- generatedChecksum: 083F09B6E0CC858A880FFB494D281303
+- generatedChecksum: E35975213092B74A224ED44C83C27C44
   logicalPath: amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   name: FreeRTOSConfig.h
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   security: NON_SECURE
   type: SOURCE
   userChecksum: E4C706748FE9C059870D239FA8CE3937
-- generatedChecksum: 0FAED8C177A8B85EB18F7E9841C9A759
+- generatedChecksum: AEB26E78C8CBEF8791E722ABD8288515
   logicalPath: amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   name: FreeRTOSIPConfig.h
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0FAED8C177A8B85EB18F7E9841C9A759
+  userChecksum: AEB26E78C8CBEF8791E722ABD8288515
 - generatedChecksum: 9ACC503E36C43DBA9092707B08A318A4
   logicalPath: amazon-freertos\libraries\freertos_plus\standard\freertos_plus_tcp\include
   name: FreeRTOSIPConfigDefaults.h
@@ -167,13 +167,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7EDDE62E8DEC81265E5F0FFE04BDA5E5
-- generatedChecksum: 5DA5066C0C50273C386BE6F8BE760589
+- generatedChecksum: E9C1E52B13C9D3AC1632D8DFB2DDCCF9
   logicalPath: amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   name: NetworkConfig.h
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\vendors\microchip\boards\curiosity2_pic32mzef\aws_demos\config_files
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5DA5066C0C50273C386BE6F8BE760589
+  userChecksum: E9C1E52B13C9D3AC1632D8DFB2DDCCF9
 - generatedChecksum: 86D0D4BAC793FD2DCAC66A1642CECFFF
   logicalPath: amazon-freertos\libraries\freertos_plus\standard\freertos_plus_tcp\include
   name: NetworkInterface.h
@@ -761,7 +761,7 @@ files:
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\demos\include
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9F1907786F1C63279CDA89B361FF671F
+  userChecksum: AB4D3579A4ACEF1FCFB3F326453DDEBC
 - generatedChecksum: null
   logicalPath: \amazon-freertos\demos\include
   name: aws_clientcredential_keys.h

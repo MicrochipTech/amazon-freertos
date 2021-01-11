@@ -5,6 +5,15 @@ children:
 - type: Symbols
   children:
   - type: Integer
+    attributes: {id: BAUD_RATE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Integer
     attributes: {id: BRG_VALUE}
     children:
     - type: Values
@@ -20,6 +29,10 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -45,6 +58,14 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -70,6 +91,14 @@ children:
         attributes: {id: dest}
         children:
         - {type: Value, value: /peripheral/flexcom/usart/}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -85,6 +114,12 @@ children:
   - type: KeyValueSet
     attributes: {id: FLEXCOM_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -108,6 +143,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -125,6 +164,10 @@ children:
     children:
     - type: Attributes
       children:
+      - type: Boolean
+        attributes: {id: markup}
+        children:
+        - {type: Value, value: 'true'}
       - type: String
         attributes: {id: name}
         children:
@@ -172,13 +215,37 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom7, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: FLEXCOM_USART_MR_USCLKS}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: FLEX_USART_CLOCK_FREQ}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: flexcom7, value: '119996416'}
+  - type: KeyValueSet
+    attributes: {id: FLEX_USART_MR_CHRL}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: FLEX_USART_MR_MODE9}
     children:
@@ -186,6 +253,24 @@ children:
       children:
       - type: Dynamic
         attributes: {id: flexcom7, value: 'false'}
+  - type: KeyValueSet
+    attributes: {id: FLEX_USART_MR_NBSTOP}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: FLEX_USART_MR_PAR}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: String
     attributes: {id: RECEIVE_DATA_REGISTER}
     children:
@@ -203,6 +288,16 @@ children:
   - type: Boolean
     attributes: {id: USART_INTERRUPT_MODE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -210,10 +305,38 @@ children:
   - type: Boolean
     attributes: {id: USART_RING_BUFFER_ENABLE}
     children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'true'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
     - type: Values
       children:
       - type: Dynamic
         attributes: {id: flexcom7, value: 'false'}
+  - type: Boolean
+    attributes: {id: USE_USART_RX_DMA}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Boolean
+    attributes: {id: USE_USART_TX_DMA}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
 - type: Attachments
   children:
   - type: DirectCapability

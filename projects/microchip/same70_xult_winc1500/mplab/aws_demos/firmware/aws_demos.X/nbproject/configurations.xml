@@ -1566,8 +1566,6 @@
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/AWS3_2/amazon-freertos/projects/microchip/same70_xult_winc1500/mplab/aws_demos/firmware/aws_demos.X/debug/aws_demos/aws_demos_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

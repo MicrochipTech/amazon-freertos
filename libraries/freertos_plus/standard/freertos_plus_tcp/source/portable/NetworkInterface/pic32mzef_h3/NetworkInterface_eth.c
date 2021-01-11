@@ -106,7 +106,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-
 #define TCPIP_STACK_TICK_RATE		        		5
 #define TCPIP_STACK_SECURE_PORT_ENTRIES             10
 
@@ -161,7 +160,7 @@ const DRV_ETHPHY_INIT tcpipPhyInitData =
 
 };
 
-/*** GMAC MAC Initialization Data ***/
+/*** ETH MAC Initialization Data ***/
 const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
 { 
     .nTxDescriptors         = TCPIP_EMAC_TX_DESCRIPTORS,
@@ -177,7 +176,6 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
     .pPhyBase               = &DRV_ETHPHY_OBJECT_BASE_Default,
     .pPhyInit               = &tcpipPhyInitData,
 };
-
 
 #ifdef PIC32_USE_ETHERNET
 
@@ -642,6 +640,7 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
         pMacCtrl->netIx = 0;
         pMacCtrl->macAction = TCPIP_MAC_ACTION_INIT;
         pMacCtrl->powerMode = TCPIP_MAC_POWER_FULL;
+        pMacCtrl->segLoadOffset = TCPIP_PKT_SegLoadOffset();
 
         macAdd.v[ 0 ] = configMAC_ADDR0;
         macAdd.v[ 1 ] = configMAC_ADDR1;

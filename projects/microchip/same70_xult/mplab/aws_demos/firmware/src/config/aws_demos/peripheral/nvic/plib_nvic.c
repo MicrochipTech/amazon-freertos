@@ -65,6 +65,16 @@ void NVIC_Initialize( void )
     NVIC_EnableIRQ(GMAC_IRQn);
     NVIC_SetPriority(UART4_IRQn, 7);
     NVIC_EnableIRQ(UART4_IRQn);
+    NVIC_SetPriority(GMAC_Q1_IRQn, 7);
+    NVIC_EnableIRQ(GMAC_Q1_IRQn);
+    NVIC_SetPriority(GMAC_Q2_IRQn, 7);
+    NVIC_EnableIRQ(GMAC_Q2_IRQn);
+    NVIC_SetPriority(GMAC_Q3_IRQn, 7);
+    NVIC_EnableIRQ(GMAC_Q3_IRQn);
+    NVIC_SetPriority(GMAC_Q4_IRQn, 7);
+    NVIC_EnableIRQ(GMAC_Q4_IRQn);
+    NVIC_SetPriority(GMAC_Q5_IRQn, 7);
+    NVIC_EnableIRQ(GMAC_Q5_IRQn);
 
 
 

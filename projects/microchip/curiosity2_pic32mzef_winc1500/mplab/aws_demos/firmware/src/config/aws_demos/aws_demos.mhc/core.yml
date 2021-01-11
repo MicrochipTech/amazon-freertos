@@ -1488,6 +1488,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: TIMER_2_InterruptHandler}
+  - type: File
+    attributes: {id: EVIC_INT_ASM}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
   - type: Combo
     attributes: {id: EVIC_PRIORITY_1ATTRIBUTE}
     children:
@@ -1693,15 +1702,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0x1200'}
-  - type: File
-    attributes: {id: LINKER_SCRIPT}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
   - type: Hex
     attributes: {id: PMD4_REG_VALUE}
     children:

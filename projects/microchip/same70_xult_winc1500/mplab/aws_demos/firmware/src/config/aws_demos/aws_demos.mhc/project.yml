@@ -761,7 +761,7 @@ files:
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\demos\include
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 21BF058546AD35F6DEA2FE97E4AF1292
+  userChecksum: AB4D3579A4ACEF1FCFB3F326453DDEBC
 - generatedChecksum: null
   logicalPath: \amazon-freertos\demos\include
   name: aws_clientcredential_keys.h

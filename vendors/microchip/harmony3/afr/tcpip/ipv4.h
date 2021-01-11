@@ -85,8 +85,88 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
  */
 typedef struct
 {
-    void*   reserved;
+    const char*     netAddress;
+    const char*     netMask;
+    const char*     gwAddress;
+    const char*     inIfName;
+    const char*     outIfName;
+    uint8_t         metric;
+}TCPIP_IPV4_FORWARD_ENTRY_ASCII;
+
+typedef struct
+{
+    uint32_t        netAddress;
+    uint32_t        netMask;
+    uint32_t        gwAddress;
+    uint8_t         inIfIx;
+    uint8_t         outIfIx;
+    uint8_t         metric;
+}TCPIP_IPV4_FORWARD_ENTRY_BIN;
+typedef union
+{
+    TCPIP_IPV4_FORWARD_ENTRY_ASCII   entryAscii;
+    TCPIP_IPV4_FORWARD_ENTRY_BIN     entryBin;
+}TCPIP_IPV4_FORWARD_ENTRY;
+typedef enum
+{
+    TCPIP_IPV4_FWD_FLAG_NONE             = 0x0000,  // no flag set, the default
+    TCPIP_IPV4_FWD_FLAG_ENABLED          = 0x0001,  // when the stack/IPv4 module starts, enable the IPv4 forwarding
+    TCPIP_IPV4_FWD_FLAG_BCAST_ENABLED    = 0x0002,  // enable the forwarding of the broadcast packets
+    TCPIP_IPV4_FWD_FLAG_MCAST_ENABLED    = 0x0004,  // enable the forwarding of the multicast packets
+    TCPIP_IPV4_FWD_FLAG_BINARY_TABLE     = 0x0000,  // The initialization forwarding table is in binary format, not strings - default setting
+    TCPIP_IPV4_FWD_FLAG_ASCII_TABLE      = 0x0100,  // The initialization forwarding table is in ASCII format, using strings
+}TCPIP_IPV4_FORWARD_FLAGS;
+typedef struct
+{
+    unsigned int failNoRoute;       // failures due to no route found
+    unsigned int failNetDown;       // failures due to net down
+    unsigned int failMacDest;       // failures due to MAC destination error
+    unsigned int failMtu;           // failures due to MTU
+    unsigned int failArpQueue;      // failures due to ARP pool empty
+    unsigned int failFwdQueue;      // failures due to forward TX Queue full 
+    unsigned int failMac;           // failures due to MAC rejecting the packet
+    unsigned int arpQueued;         // ARP queued MAC addresses
+    unsigned int ucastPackets;      // unicast packets to the router address
+    unsigned int bcastPackets;      // broadcast packets 
+    unsigned int mcastPackets;      // multicast packets 
+    unsigned int fwdPackets;        // total should be forwarded packets
+    unsigned int fwdQueuedPackets;  // queued packets (forwarded and then processed internally)
+    unsigned int macPackets;        // packets actually forwarded to MAC
+}TCPIP_IPV4_FORWARD_STAT;
+typedef struct
+{
+    size_t nPool;       // entries in the pool
+    size_t nPend;       // entries pending to be resolved
+    size_t txSubmit;    // submitted for TX
+    size_t fwdSubmit;   // submitted for FWD
+    size_t txSolved;    // solved for TX
+    size_t fwdSolved;   // solved for FWD
+    size_t totSolved;   // total solved
+    size_t totFailed;   // total failed 
+}TCPIP_IPV4_ARP_QUEUE_STAT;
+typedef struct
+{
+    size_t                  arpEntries;
+    TCPIP_IPV4_FORWARD_FLAGS forwardFlags;
+    size_t                  forwardTxQueueSize;
+    size_t                  forwardTableMaxEntries;
+    size_t                  forwardTableSize;
+    const TCPIP_IPV4_FORWARD_ENTRY* forwardTable;   
 }TCPIP_IPV4_MODULE_CONFIG;
+typedef enum
+{
+    TCPIP_IPV4_RES_OK       = 0,        // everything OK
+    TCPIP_IPV4_RES_INIT_VAL_ERR = -1,       // initialization value error
+    TCPIP_IPV4_RES_SIGNAL_ERR   = -2,       // failed to create a signal handler
+    TCPIP_IPV4_RES_ARP_ERR      = -3,       // failed to initialize ARP queue
+    TCPIP_IPV4_RES_NOTIFY_ERR   = -4,       // failed to initialize notifications
+    TCPIP_IPV4_RES_MEM_ERR      = -5,       // failed to allocate memory
+    TCPIP_IPV4_RES_ENTRIES_ERR  = -6,       // invalid forward table entries
+    TCPIP_IPV4_RES_FORMAT_ERR   = -7,       // not supported forward table format 
+    TCPIP_IPV4_RES_ADDRESS_ERR  = -8,       // invalid IP address 
+    TCPIP_IPV4_RES_MASK_ERR     = -9,       // invalid IP mask 
+    TCPIP_IPV4_RES_IF_ERR       = -10,      // invalid interface
+}TCPIP_IPV4_RES;
 
 // *****************************************************************************
 /* IPv4 supported protocols
@@ -195,7 +275,7 @@ typedef union
   Remarks:
     None.
  */
-typedef struct
+typedef struct __attribute__((aligned(2), packed))
 {
     struct
     {
@@ -236,7 +316,6 @@ typedef struct
     IPV4_ADDR           srcAddress;     // packet source
     IPV4_ADDR           destAddress;    // packet destination
     TCPIP_NET_HANDLE    netIfH;         // packet interface
-    IPV4_ADDR           arpTarget;      // ARP resolution target
     uint8_t             optionLen;      // length of the options in the IPV4 packet; usually 0
     uint8_t             optionOffset;   // offset of the current option; when multiple options are supported
     uint16_t            optionMask;     // internal options to be embedded in the packet
@@ -557,7 +636,8 @@ bool    TCPIP_IPV4_PacketTransmit(IPV4_PACKET* pPkt);
     None.
  */
 TCPIP_NET_HANDLE   TCPIP_IPV4_SelectSourceInterface(TCPIP_NET_HANDLE netH, 
-                 IPV4_ADDR* pDestAddress, IPV4_ADDR* pSrcAddress, bool srcSet);
+                 const IPV4_ADDR* pDestAddress, IPV4_ADDR* pSrcAddress, bool srcSet);
+TCPIP_NET_HANDLE    TCPIP_IPV4_SelectDestInterface(const IPV4_ADDR* pDestAddress);
 
 // *****************************************************************************
 /*
@@ -1028,6 +1108,10 @@ TCPIP_IPV4_PROCESS_HANDLE     TCPIP_IPV4_PacketHandlerRegister(TCPIP_IPV4_PACKET
   */
 bool    TCPIP_IPV4_PacketHandlerDeregister(TCPIP_IPV4_PROCESS_HANDLE pktHandle);
 
+size_t TCPIP_IPV4_ForwadTableSizeGet(TCPIP_NET_HANDLE netH);
+bool TCPIP_IPV4_ForwadTableEntryGet(TCPIP_NET_HANDLE netH, size_t index, TCPIP_IPV4_FORWARD_ENTRY_BIN* pFwdEntry);
+bool TCPIP_IPv4_ForwardStatGet(size_t index, TCPIP_IPV4_FORWARD_STAT* pStat, bool clear);
+bool TCPIP_IPv4_ArpStatGet(TCPIP_IPV4_ARP_QUEUE_STAT* pStat, bool clear);
 
 // *****************************************************************************
 /*

@@ -11,23 +11,5 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvMiim, value: _ETH_BASE_ADDRESS}
-  - type: Menu
-    attributes: {id: DRV_MIIM_RTOS_MENU}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
-  - type: File
-    attributes: {id: DRV_SDHC_SYS_RTOS_TASK}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
 - type: ElementPosition
   attributes: {x: '408', y: '418', id: drvMiim}

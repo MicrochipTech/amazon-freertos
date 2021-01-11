@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AWS3_2/amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/same54/NetworkInterface_eth.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/harmony3/afr/afr.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/same54_xpro_ecc/mplab/aws_demos/firmware/src/config/aws_demos/configuration.h</file>
+            <file>file:/D:/AWSTEST/amazon-freertos/demos/include/aws_clientcredential_keys.h</file>
+            <file>file:/D:/AWSTEST/amazon-freertos/vendors/microchip/boards/same54_xpro/aws_demos/config_files/FreeRTOSConfig.h</file>
         </group>
     </open-files>
 </project-private>

@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/aws_demos/config_files/FreeRTOSConfig.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/aws_demos/config_files/FreeRTOSIPConfig.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/ports/pkcs11/iot_pkcs11_pal.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/same54_xpro/mplab/aws_demos/firmware/src/main.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/demos/include/aws_clientcredential_keys.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/ports/pkcs11/pkcs11_nvm.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/ports/ota/aws_ota_pal.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/demos/dev_mode_key_provisioning/src/aws_dev_mode_key_provisioning.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/libraries/abstractions/pkcs11/mbedtls/iot_pkcs11_mbedtls.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/same54_xpro/aws_demos/config_files/iot_pkcs11_config.h</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

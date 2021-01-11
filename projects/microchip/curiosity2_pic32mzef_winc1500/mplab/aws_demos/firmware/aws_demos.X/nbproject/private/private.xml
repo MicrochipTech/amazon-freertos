@@ -2,18 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/main.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/demos/dev_mode_key_provisioning/src/aws_dev_mode_key_provisioning.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/app.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/demos/include/aws_clientcredential_keys.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/demos/include/aws_clientcredential.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/libraries/freertos_plus/standard/pkcs11/src/iot_pkcs11.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/config/aws_demos/library/cryptoauthlib/pkcs11/pkcs11_debug.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/config/aws_demos/library/cryptoauthlib/pkcs11/pkcs11_config.h</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/config/aws_demos/library/cryptoauthlib/pkcs11/pkcs11_debug.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/projects/microchip/curiosity2_pic32mzef_winc1500/mplab/aws_demos/firmware/src/config/aws_demos/library/cryptoauthlib/hal/ATECC608_0.c</file>
-            <file>file:/D:/AWS3_2/amazon-freertos/vendors/microchip/boards/curiosity2_pic32mzef/ports/wifi/aws_wifi.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

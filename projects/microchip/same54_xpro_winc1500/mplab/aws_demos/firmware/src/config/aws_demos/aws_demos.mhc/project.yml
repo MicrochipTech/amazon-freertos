@@ -754,7 +754,7 @@ files:
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\demos\include
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 21BF058546AD35F6DEA2FE97E4AF1292
+  userChecksum: AB4D3579A4ACEF1FCFB3F326453DDEBC
 - generatedChecksum: null
   logicalPath: \amazon-freertos\demos\include
   name: aws_clientcredential_keys.h
@@ -1119,13 +1119,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: EFB26384E3CD286A65EABDFF5F1CDFFA
+- generatedChecksum: 3BE616E7CDDFBBB3E8614D89126074BE
   logicalPath: amazon-freertos\vendors\microchip\boards\same54_xpro\ports\ota
   name: aws_ota_pal.c
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\vendors\microchip\boards\same54_xpro\ports\ota
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EFB26384E3CD286A65EABDFF5F1CDFFA
+  userChecksum: 3BE616E7CDDFBBB3E8614D89126074BE
 - generatedChecksum: B5F09801C89B04D2EC3B1B5D5363CE01
   logicalPath: amazon-freertos\vendors\microchip\boards\same54_xpro\aws_demos\config_files
   name: aws_secure_sockets_config.h
@@ -3492,13 +3492,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A12BD6EA652A9C1FFF1EC0C91C6BE6D4
-- generatedChecksum: 7CA829EF91126F5E1088BC91656D6F2D
+- generatedChecksum: 37249F9A4B62B0CCC632AE7878A73B89
   logicalPath: amazon-freertos\vendors\microchip\boards\same54_xpro\ports\pkcs11
   name: pkcs11_nvm.c
   physicalPath: ..\..\..\..\..\..\..\..\..\..\amazon-freertos\vendors\microchip\boards\same54_xpro\ports\pkcs11
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7CA829EF91126F5E1088BC91656D6F2D
+  userChecksum: 37249F9A4B62B0CCC632AE7878A73B89
 - generatedChecksum: 170557243232EBC9EF42FE2E7827BD54
   logicalPath: amazon-freertos\vendors\microchip\boards\same54_xpro\ports\pkcs11
   name: pkcs11_nvm.h

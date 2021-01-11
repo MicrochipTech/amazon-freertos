@@ -333,6 +333,10 @@ bool      TCPIP_Helper_StringToMACAddress(const char* str, uint8_t macAddr[6]);
 
 bool     TCPIP_Helper_MACAddressToString(const TCPIP_MAC_ADDR* macAddr, char* buff, size_t buffSize);
 
+static __inline__ bool __attribute__((always_inline)) TCPIP_Helper_IsMcastMACAddress(const TCPIP_MAC_ADDR* pMacAddress)
+{
+    return (pMacAddress->v[0] & 0x01) != 0;
+}
 // helpers to convert a host long to a network long
 // and reverse
 //
@@ -372,7 +376,7 @@ bool     TCPIP_Helper_MACAddressToString(const TCPIP_MAC_ADDR* macAddr, char* bu
     None.    
  */
 
-#if defined(__PIC32MX__) || defined(__PIC32MZ__) || defined(__PIC32MK__)
+#if defined(__mips__)
 uint32_t __attribute__((nomips16)) TCPIP_Helper_htonl(uint32_t hLong);
 
 uint16_t __attribute__((nomips16)) TCPIP_Helper_htons(uint16_t hShort);

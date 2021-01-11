@@ -79,7 +79,7 @@ extern "C" {
 // Section: System Service Configuration
 // *****************************************************************************
 // *****************************************************************************
- 
+
 #define SYS_CMD_ENABLE
 #define SYS_CMD_DEVICE_MAX_INSTANCES       SYS_CONSOLE_DEVICE_MAX_INSTANCES
 #define SYS_CMD_PRINT_BUFFER_SIZE          1024
@@ -146,14 +146,20 @@ extern "C" {
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY				    	64
 #define TCPIP_GMAC_TX_BUFF_SIZE_DUMMY				    	64
 
-/*** QUEUE 0 Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0				10
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0				10
+		/*** QUEUE 0 TX Configuration ***/
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0				8
+#define TCPIP_GMAC_TX_BUFF_SIZE_QUE0				    	1536			
+#define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0				    	1536
+		
+		/*** QUEUE 0 RX Configuration ***/
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0				8
 #define TCPIP_GMAC_RX_BUFF_SIZE_QUE0				    	1536
-#define TCPIP_GMAC_TX_BUFF_SIZE_QUE0				    	1536
-#define TCPIP_GMAC_RX_BUFF_COUNT_QUE0				   		12
-#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0				1
-#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0					1
+#define TCPIP_GMAC_RX_BUFF_COUNT_QUE0				   		10
+#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0			1
+#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0				2
+
+
+
 
 
 
@@ -166,7 +172,10 @@ extern "C" {
                                                     TCPIP_MAC_RX_FILTER_TYPE_MCAST_ACCEPT |\
                                                     TCPIP_MAC_RX_FILTER_TYPE_UCAST_ACCEPT |\
                                                     TCPIP_MAC_RX_FILTER_TYPE_CRC_ERROR_REJECT |\
-                                                    0
+													0
+#define TCPIP_GMAC_SCREEN1_COUNT_QUE							0
+#define TCPIP_GMAC_SCREEN2_COUNT_QUE							0	
+													
 #define TCPIP_GMAC_ETH_OPEN_FLAGS       			\
                                                     TCPIP_ETH_OPEN_AUTO |\
                                                     TCPIP_ETH_OPEN_FDUPLEX |\
@@ -182,15 +191,9 @@ extern "C" {
 
 #define DRV_GMAC_RX_CHKSM_OFFLOAD				(TCPIP_MAC_CHECKSUM_NONE)			
 #define DRV_GMAC_TX_CHKSM_OFFLOAD				(TCPIP_MAC_CHECKSUM_NONE)		
-
-#define DRV_GMAC_INSTANCES_NUMBER				1
+#define TCPIP_GMAC_TX_PRIO_COUNT				1
+#define TCPIP_GMAC_RX_PRIO_COUNT				1
 #define DRV_GMAC_NUMBER_OF_QUEUES				1
-#define DRV_GMAC_CLIENTS_NUMBER					1
-#define DRV_GMAC_INDEX	    	    				1
-#define DRV_GMAC_PERIPHERAL_ID					1
-#define DRV_GMAC_INTERRUPT_SOURCE				GMAC_IRQn
-
-#define DRV_GMAC_INTERRUPT_MODE        				true
 #define DRV_GMAC_RMII_MODE					0
 
 

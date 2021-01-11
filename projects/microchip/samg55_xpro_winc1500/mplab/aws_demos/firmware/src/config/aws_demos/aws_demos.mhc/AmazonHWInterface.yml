@@ -911,6 +911,13 @@ children:
       children:
       - type: User
         attributes: {value: '132000'}
+  - type: Combo
+    attributes: {id: H3_AWS_CLOUD_CONF}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Wifi + ECC608}
   - type: Boolean
     attributes: {id: HW_AWS_CLOUD_H3}
     children:

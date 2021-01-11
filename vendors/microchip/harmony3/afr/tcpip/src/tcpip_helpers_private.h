@@ -57,7 +57,7 @@ TCPIP_MAC_POWER_MODE TCPIP_Helper_StringToPowerMode(const char* str);
 
 const char*     TCPIP_Helper_PowerModeToString(TCPIP_MAC_POWER_MODE mode);
 
-uint16_t        TCPIP_Helper_CalcIPChecksum(uint8_t* buffer, uint16_t len, uint16_t seed);
+uint16_t        TCPIP_Helper_CalcIPChecksum(const uint8_t* buffer, uint16_t len, uint16_t seed);
 
 uint16_t        TCPIP_Helper_PacketChecksum(TCPIP_MAC_PACKET* pPkt, uint8_t* startAdd, uint16_t len, uint16_t seed);
 
@@ -65,7 +65,6 @@ uint16_t        TCPIP_Helper_ChecksumFold(uint32_t checksum);
 
 uint16_t        TCPIP_Helper_PacketCopy(TCPIP_MAC_PACKET* pSrcPkt, uint8_t* pDest, uint8_t** pStartAdd, uint16_t len, bool srchTransport);
 
-void            TCPIP_Helper_FormatNetBIOSName(uint8_t Name[16]);
 
 
 // Protocols understood by the TCPIP_Helper_ExtractURLFields() function.  IMPORTANT: If you 

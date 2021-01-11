@@ -5,7 +5,7 @@ frameworkPath: ../../../../../..
 processor: ATSAMG55J19
 projectName: ''
 settings:
-  PackageFilter: aws_cloud;bsp;core;crypto;cryptoauthlib;cryptoauthlib_apps;csp;net;wireless;
+  PackageFilter: aws_cloud;bsp;core;crypto;cryptoauthlib;csp;csp_apps_pic32mk;net;net;net;quick_docs;usb;wireless;
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'

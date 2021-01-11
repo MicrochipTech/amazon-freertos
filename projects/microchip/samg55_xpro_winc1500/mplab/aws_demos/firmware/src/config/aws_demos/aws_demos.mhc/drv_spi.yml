@@ -70,6 +70,15 @@ children:
           children:
           - type: Dynamic
             attributes: {id: drv_spi_0, value: FLEXCOM5}
+      - type: Integer
+        attributes: {id: DRV_SPI_QUEUE_SIZE}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
     - type: Attachments
       children:
       - type: DirectCapability

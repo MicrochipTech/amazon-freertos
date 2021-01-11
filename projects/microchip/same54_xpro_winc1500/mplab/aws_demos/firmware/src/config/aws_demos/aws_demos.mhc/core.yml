@@ -3101,6 +3101,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: AmazonHWInterface, value: 'true'}
+  - type: Comment
+    attributes: {id: SYSTICK_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: String
     attributes: {id: SYSTICK_PERIOD}
     children:
@@ -3311,5 +3320,14 @@ children:
         attributes: {id: value}
         children:
         - {type: Value, value: ROM_ORIGIN=0x10000;ROM_LENGTH=0xf0000}
+  - type: Boolean
+    attributes: {id: systickEnable}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
 - type: ElementPosition
   attributes: {x: '74', y: '41', id: core}

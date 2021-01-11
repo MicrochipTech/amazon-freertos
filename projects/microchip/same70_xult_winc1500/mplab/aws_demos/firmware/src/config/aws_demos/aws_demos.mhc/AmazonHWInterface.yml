@@ -1260,4 +1260,4 @@ children:
         children:
         - {type: Value, value: 'true'}
 - type: ElementPosition
-  attributes: {x: '1140', y: '215', id: AmazonHWInterface}
+  attributes: {x: '997', y: '157', id: AmazonHWInterface}

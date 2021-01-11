@@ -11,15 +11,6 @@ children:
       children:
       - type: User
         attributes: {value: '24'}
-  - type: Menu
-    attributes: {id: DRV_WIFI_WINC_RTOS_MENU}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
   - type: String
     attributes: {id: DRV_WIFI_WINC_SPI_INST}
     children:
@@ -34,15 +25,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drvWifiWinc, value: '0'}
-  - type: File
-    attributes: {id: DRV_WIFI_WINC_SYS_RTOS_TASK}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'true'}
 - type: Attachments
   children:
   - type: DirectDependency
