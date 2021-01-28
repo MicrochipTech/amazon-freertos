@@ -39,7 +39,7 @@
 
 /* This define should be available only if the Wi-Fi code is enabled. */
 #ifndef PIC32_USE_ETHERNET
-    //#define testrunnerFULL_WIFI_ENABLED    1
+    #define testrunnerFULL_WIFI_ENABLED    1
 #endif
 
 /* clang-format off */
@@ -58,7 +58,7 @@
 #define testrunnerFULL_PKCS11_ENABLED              0
 #define testrunnerFULL_POSIX_ENABLED               0
 #define testrunnerFULL_SHADOW_ENABLED              0
-#define testrunnerFULL_TCP_ENABLED                 1
+#define testrunnerFULL_TCP_ENABLED                 0
 #define testrunnerFULL_TLS_ENABLED                 0
 #define testrunnerFULL_OTA_AGENT_ENABLED           0
 #define testrunnerFULL_OTA_PAL_ENABLED             0
