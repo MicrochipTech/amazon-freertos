@@ -53,7 +53,6 @@
 #include "configuration.h"
 #include "definitions.h"
 
-int test_data = 0;
 
 
 
@@ -89,9 +88,8 @@ static void _WDRV_PIC32MZW1_Tasks(  void *pvParameters  )
     printf("log31\r\n");
     while(1)
     {
-        //printf("log41\r\n");
-        if (test_data == 1)
-            WDRV_PIC32MZW_Tasks(sysObj.drvWifiPIC32MZW1);
+
+        WDRV_PIC32MZW_Tasks(sysObj.drvWifiPIC32MZW1);
         vTaskDelay(1 / portTICK_PERIOD_MS);
     }
 }

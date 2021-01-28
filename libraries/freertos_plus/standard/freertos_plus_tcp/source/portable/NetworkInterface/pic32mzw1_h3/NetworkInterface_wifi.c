@@ -126,8 +126,6 @@
 #define TCPIP_STACK_INTERFACE_CHANGE_SIGNALING   false
 #define TCPIP_STACK_CONFIGURATION_SAVE_RESTORE   true
 
-extern int test_data;
-
 
 const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] =
 {
@@ -331,8 +329,7 @@ const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] 
                 xMacInitStatus = eMACFailed;
             }
         }
-        test_data = 1;
-        
+
         WIFINetworkParams_t xNetworkParams;
 
         xNetworkParams.pcSSID = clientcredentialWIFI_SSID;
@@ -859,6 +856,8 @@ const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] 
             }
             /* sizeof(TCPIP_MAC_ETHERNET_HEADER) is subtracted by the driver */
             /* but FreeRTOS needs the whole frame! */
+
+            pktLength += sizeof( TCPIP_MAC_ETHERNET_HEADER );
 
             if( eConsiderFrameForProcessing( pPktBuff ) != eProcessBuffer )
             {

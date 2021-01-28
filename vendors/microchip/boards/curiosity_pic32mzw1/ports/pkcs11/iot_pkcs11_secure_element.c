@@ -65,7 +65,7 @@
 #include "pkcs11/pkcs11_object.h"
 #include "pkcs11/pkcs11_slot.h"
 
-extern ATCAIfaceCfg atecc608a_0_init_data;
+extern ATCAIfaceCfg atecc608_0_init_data;
 
 int mbedtls_hardware_poll( void * data,
                            unsigned char * output,
@@ -586,7 +586,7 @@ CK_RV pkcs11_config_interface(pkcs11_slot_ctx_ptr pSlot)
     CK_RV rv = CKR_ARGUMENTS_BAD;
     if (pSlot)
     {
-        pSlot->interface_config = atecc608a_0_init_data;
+        pSlot->interface_config = atecc608_0_init_data;
         rv = CKR_OK;
     }
     return rv;

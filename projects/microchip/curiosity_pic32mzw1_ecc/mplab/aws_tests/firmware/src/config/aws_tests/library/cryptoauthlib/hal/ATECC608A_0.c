@@ -8,7 +8,7 @@
 
 #include "cryptoauthlib.h"
 
-ATCAIfaceCfg atecc608a_0_init_data = {
+ATCAIfaceCfg atecc608_0_init_data = {
        .iface_type            = ATCA_I2C_IFACE,
        .devtype               = ATECC608A,
        .atcai2c.slave_address = 0x6A,
