@@ -51,7 +51,7 @@ void pkcs11_debug_attributes(CK_ATTRIBUTE_PTR pTemplate, CK_ULONG ulCount);
 #else
 
 #define PKCS11_DEBUG_NOFILE(...)
-#define PKCS11_DEBUG(...)       printf
+#define PKCS11_DEBUG(...)
 #define PKCS11_DEBUG_RETURN(x)     { return x; }
 #define pkcs11_debug_attributes(x, y)
 

@@ -143,7 +143,6 @@ ATCA_STATUS hal_i2c_post_init(ATCAIface iface)
 
 ATCA_STATUS hal_i2c_send(ATCAIface iface, uint8_t word_address, uint8_t *txdata, int txlength)
 {
-    
     ATCAIfaceCfg* cfg = atgetifacecfg(iface);
     atca_plib_i2c_api_t * plib;
     ATCA_STATUS status = ATCA_COMM_FAIL;

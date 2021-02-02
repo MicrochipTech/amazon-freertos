@@ -69,9 +69,6 @@ void EVIC_Initialize( void )
     IPC41SET = 0x4000000 | 0x0;  /* CRYPTO1_FAULT:  Priority 1 / Subpriority 0 */
 
 
-
-    /* Configure Shadow Register Set */
-    //PRISS = 0x76543210;
 }
 
 void EVIC_SourceEnable( INT_SOURCE source )

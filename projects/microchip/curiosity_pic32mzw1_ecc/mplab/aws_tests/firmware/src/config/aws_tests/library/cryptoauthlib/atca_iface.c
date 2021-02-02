@@ -78,7 +78,6 @@ ATCA_STATUS initATCAIface(ATCAIfaceCfg *cfg, ATCAIface ca_iface)
     status = atinit(ca_iface);
     if (status != ATCA_SUCCESS)
     {
-        printf("[%s] log1, status = %d\r\n", __func__, status);
         return status;
     }
 

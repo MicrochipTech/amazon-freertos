@@ -128,14 +128,12 @@ ATCA_STATUS initATCADevice(ATCAIfaceCfg *cfg, ATCADevice ca_dev)
     status = initATCACommand(cfg->devtype, ca_dev->mCommands);
     if (status != ATCA_SUCCESS)
     {
-        printf("[%s] log1, status = %d\r\n", __func__, status);
         return status;
     }
 
     status = initATCAIface(cfg, ca_dev->mIface);
     if (status != ATCA_SUCCESS)
     {
-        printf("[%s] log1, status = %d\r\n", __func__, status);
         return status;
     }
 

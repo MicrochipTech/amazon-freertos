@@ -35,11 +35,6 @@
 #ifdef PIC32_USE_ECC
 extern const char * pcPkcs11GetThingName(void);
 #endif
-/**
- * @brief File storage location definitions.
- */
-#define pkcs11configFILE_NAME_CLIENT_CERTIFICATE    "FreeRTOS_P11_Certificate.dat"
-#define pkcs11configFILE_NAME_KEY                   "FreeRTOS_P11_Key.dat"
 
 /* A non-standard version of C_INITIALIZE should be used by this port. */
 /* #define pkcs11configC_INITIALIZE_ALT */

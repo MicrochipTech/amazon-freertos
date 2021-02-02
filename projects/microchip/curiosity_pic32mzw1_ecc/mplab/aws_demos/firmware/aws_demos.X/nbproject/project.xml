@@ -6,7 +6,7 @@
             <name>aws_demos</name>
             <creation-uuid>e54023e9-3948-44ef-bf6f-29d8b223e555</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
+            <c-extensions>c,S</c-extensions>
             <cpp-extensions/>
             <header-extensions>h</header-extensions>
             <asminc-extensions/>
@@ -14,9 +14,6 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>../src</sourceRootElem>
-                <sourceRootElem>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11</sourceRootElem>
-                <sourceRootElem>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_demos/application_code</sourceRootElem>
-                <sourceRootElem>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

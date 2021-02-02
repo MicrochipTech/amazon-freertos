@@ -50,6 +50,7 @@ static void pkcs11_cert_check_trust_data(pkcs11_object_ptr pObject)
     {
         const atcacert_def_t * cert_def = NULL;
         (void)tng_get_device_cert_def(&cert_def);
+
         if (cert_def)
         {
             if (CK_CERTIFICATE_CATEGORY_AUTHORITY == pObject->class_type)
@@ -534,6 +535,7 @@ CK_RV pkcs11_cert_x509_write(CK_VOID_PTR pObject, CK_ATTRIBUTE_PTR pAttribute)
     {
         return CKR_ARGUMENTS_BAD;
     }
+
     if (atcab_is_ca_device(atcab_get_device_type()))
     {
         status = atcacert_write_cert(obj_ptr->data, pAttribute->pValue, pAttribute->ulValueLen);

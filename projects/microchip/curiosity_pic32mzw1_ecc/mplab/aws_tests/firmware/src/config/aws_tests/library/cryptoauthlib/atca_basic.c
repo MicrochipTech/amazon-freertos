@@ -72,6 +72,7 @@ ATCA_STATUS atcab_version(char *ver_str)
 ATCA_STATUS atcab_init_ext(ATCADevice* device, ATCAIfaceCfg *cfg)
 {
     ATCA_STATUS status = ATCA_GEN_FAIL;
+
     if (device)
     {
         // If a device has already been initialized, release it

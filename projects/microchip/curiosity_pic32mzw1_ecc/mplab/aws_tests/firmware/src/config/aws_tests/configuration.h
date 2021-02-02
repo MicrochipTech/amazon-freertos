@@ -79,15 +79,30 @@ extern "C" {
 // Section: System Service Configuration
 // *****************************************************************************
 // *****************************************************************************
-/* Command System Service RTOS Configurations*/
+/* TIME System Service Configuration Options */
+#define SYS_TIME_INDEX_0                            (0)
+#define SYS_TIME_MAX_TIMERS                         (5)
+#define SYS_TIME_HW_COUNTER_WIDTH                   (32)
+#define SYS_TIME_HW_COUNTER_PERIOD                  (4294967295U)
+#define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
+#define SYS_TIME_CPU_CLOCK_FREQUENCY                (200000000)
+#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (620)
+
+#define SYS_CONSOLE_INDEX_0                       0
+
+
+
+
 
 #define SYS_CMD_ENABLE
 #define SYS_CMD_DEVICE_MAX_INSTANCES       SYS_CONSOLE_DEVICE_MAX_INSTANCES
 #define SYS_CMD_PRINT_BUFFER_SIZE          1024
 #define SYS_CMD_BUFFER_DMA_READY
 
+/* Command System Service RTOS Configurations*/
 #define SYS_CMD_RTOS_STACK_SIZE                256
 #define SYS_CMD_RTOS_TASK_PRIORITY             1
+
 
 #define SYS_DEBUG_ENABLE
 #define SYS_DEBUG_GLOBAL_ERROR_LEVEL       SYS_ERROR_DEBUG
@@ -95,24 +110,10 @@ extern "C" {
 #define SYS_DEBUG_USE_CONSOLE
 
 
-/* TIME System Service Configuration Options */
-#define SYS_TIME_INDEX_0                     0
-#define SYS_TIME_MAX_TIMERS                  5
-#define SYS_TIME_HW_COUNTER_WIDTH            32
-#define SYS_TIME_HW_COUNTER_PERIOD           4294967295U
-#define SYS_TIME_HW_COUNTER_HALF_PERIOD	     (SYS_TIME_HW_COUNTER_PERIOD>>1)
-#define SYS_TIME_CPU_CLOCK_FREQUENCY         200000000
-#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES      (620)
-
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			1
 #define SYS_CONSOLE_UART_MAX_INSTANCES 	   			1
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		0
 #define SYS_CONSOLE_PRINT_BUFFER_SIZE        		200
-
-
-#define SYS_CONSOLE_INDEX_0                       0
-
-
 
 
 
@@ -123,7 +124,7 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /*** WiFi PIC32MZW1 Driver Configuration ***/
-#define WDRV_PIC32MZW_DEBUG_LEVEL               WDRV_PIC32MZW_DEBUG_TYPE_TRACE
+#define WDRV_PIC32MZW1_DEVICE_USE_SYS_DEBUG
 #define WDRV_PIC32MZW_WPA3_SUPPORT
 #define WDRV_PIC32MZW_BA414E_SUPPORT
 
@@ -138,18 +139,17 @@ extern "C" {
 /* MPLAB Harmony BA414E Driver Definitions*/
 #define DRV_BA414E_NUM_CLIENTS 5
 
+
 /* Net Pres RTOS Configurations*/
 #define DRV_BA414E_RTOS_STACK_SIZE           1024
 #define DRV_BA414E_RTOS_TASK_PRIORITY             1	
 
 
 
-/*** wolfCrypt Library Configuration ***/
-#define WOLFSSL_MICROCHIP_PIC32MZ
-#define WOLFSSL_HAVE_MCHP_HW_CRYPTO_ECC_HW_BA414E
-#define WOLFSSL_HAVE_MCHP_BA414E_CRYPTO
-#define NO_PIC32MZ_HASH
+#define TCPIP_IF_ETHMAC
 
+
+/*** wolfCrypt Library Configuration ***/
 #define MICROCHIP_PIC32
 #define MICROCHIP_MPLAB_HARMONY
 #define MICROCHIP_MPLAB_HARMONY_3
@@ -163,10 +163,12 @@ extern "C" {
 #define HAVE_MCAPI
 #define WOLF_CRYPTO_CB  // provide call-back support
 #define WOLFCRYPT_ONLY
-#define WOLFSSL_HAVE_MIN
-#define WOLFSSL_HAVE_MAX
+#define WOLFSSL_MICROCHIP_PIC32MZ
+#define WOLFSSL_HAVE_MCHP_HW_CRYPTO_ECC_HW_BA414E
+#define WOLFSSL_HAVE_MCHP_BA414E_CRYPTO
 #define NO_MD4
 #define WOLFSSL_SHA224
+#define NO_PIC32MZ_HASH
 #define WOLFSSL_AES_128
 #define WOLFSSL_AES_192
 #define WOLFSSL_AES_256

@@ -54,13 +54,31 @@
 #include "definitions.h"
 
 
+// *****************************************************************************
+// *****************************************************************************
+// Section: RTOS "Tasks" Routine
+// *****************************************************************************
+// *****************************************************************************
 
+void _DRV_BA414E_Tasks(  void *pvParameters  )
+{
+    while(1)
+    {
+        DRV_BA414E_Tasks(sysObj.ba414e);
+    }
+}
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: System "Tasks" Routine
-// *****************************************************************************
-// *****************************************************************************
+/* Handle for the APP_Tasks. */
+TaskHandle_t xAPP_Tasks;
+
+void _APP_Tasks(  void *pvParameters  )
+{   
+    while(1)
+    {
+        APP_Tasks();
+        vTaskDelay(50 / portTICK_PERIOD_MS);
+    }
+}
 
 void _SYS_CMD_Tasks(  void *pvParameters  )
 {
@@ -71,36 +89,24 @@ void _SYS_CMD_Tasks(  void *pvParameters  )
     }
 }
 
-/* Handle for the APP_Tasks. */
-TaskHandle_t xAPP_Tasks;
-
-void _APP_Tasks(  void *pvParameters  )
-{
-    while(1)
-    {
-        APP_Tasks();
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-    }
-}
 
 static void _WDRV_PIC32MZW1_Tasks(  void *pvParameters  )
 {
-    printf("log31\r\n");
     while(1)
     {
-
         WDRV_PIC32MZW_Tasks(sysObj.drvWifiPIC32MZW1);
-        vTaskDelay(1 / portTICK_PERIOD_MS);
     }
 }
 
-void _DRV_BA414E_Tasks(  void *pvParameters  )
-{
-    while(1)
-    {
-        DRV_BA414E_Tasks(sysObj.ba414e);
-    }
-}
+
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System "Tasks" Routine
+// *****************************************************************************
+// *****************************************************************************
+
 /*******************************************************************************
   Function:
     void SYS_Tasks ( void )
@@ -111,8 +117,8 @@ void _DRV_BA414E_Tasks(  void *pvParameters  )
 void SYS_Tasks ( void )
 {
     /* Maintain system services */
-#if 1
-    //SYS_CMD_Tasks();
+    
+
     xTaskCreate( _SYS_CMD_Tasks,
         "SYS_CMD_TASKS",
         SYS_CMD_RTOS_STACK_SIZE,
@@ -120,32 +126,22 @@ void SYS_Tasks ( void )
         SYS_CMD_RTOS_TASK_PRIORITY,
         (TaskHandle_t*)NULL
     );
-#endif
-    
+
+
 
 
     /* Maintain Device Drivers */
-    //WDRV_PIC32MZW_Tasks(sysObj.drvWifiPIC32MZW1);
-
-    
-
-
-    /* Maintain Middleware & Other Libraries */
-    
-    //DRV_BA414E_Tasks(sysObj.ba414e);
-    
-    /* Maintain Device Drivers */
-    xTaskCreate( _WDRV_PIC32MZW1_Tasks,
+        xTaskCreate( _WDRV_PIC32MZW1_Tasks,
         "WDRV_PIC32MZW1_Tasks",
         1024,
-            //2560,
         (void*)NULL,
         1,
         (TaskHandle_t*)NULL
     );
 
 
-#if 1
+
+
     /* Maintain Middleware & Other Libraries */
     
     xTaskCreate( _DRV_BA414E_Tasks,
@@ -158,19 +154,21 @@ void SYS_Tasks ( void )
 
 
 
+
     /* Maintain the application's state machine. */
-        /* Call Application task APP. */
-    //APP_Tasks();
-    /* Create OS Thread for APP_Tasks. */
+        /* Create OS Thread for APP_Tasks. */
     xTaskCreate((TaskFunction_t) _APP_Tasks,
                 "APP_Tasks",
                 1024,
                 NULL,
                 1,
                 &xAPP_Tasks);
-#endif
 
 
+
+
+    /* Start RTOS Scheduler. */
+    
 }
 
 /*******************************************************************************

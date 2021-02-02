@@ -88,8 +88,6 @@
 /* Software timer related definitions. */
 #define configUSE_TIMERS                           1 
 #define configTIMER_TASK_PRIORITY                  1
-///#define configTIMER_QUEUE_LENGTH                   2
-///#define configTIMER_TASK_STACK_DEPTH               512
 #define configTIMER_QUEUE_LENGTH                   5
 #define configTIMER_TASK_STACK_DEPTH               1024
 #define configUSE_DAEMON_TASK_STARTUP_HOOK         0 
@@ -139,7 +137,6 @@
                                uint32_t ulLine );
     #define configASSERT( x )    if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
 
-
 /* The function that implements FreeRTOS printf style output, and the macro
  * that maps the configPRINTF() macros to that function. */
     extern void vLoggingPrintf( const char * pcFormat,
@@ -147,8 +144,8 @@
     #define configPRINTF( X )          vLoggingPrintf X
 
 /* Map the logging task's printf to the board specific output function. */
-    #define configPRINT_STRING( x )    SYS_CONSOLE_MESSAGE("\r" );  \
-                                                                        SYS_CONSOLE_MESSAGE( x )
+    #define configPRINT_STRING( x )    	SYS_CONSOLE_MESSAGE("\r" );  \
+                              		SYS_CONSOLE_MESSAGE( x )
 
 
 /* Sets the length of the buffers into which logging messages are written - so
@@ -211,19 +208,13 @@
 /* PIC32 note: PIC32 processors have a factory programmed MAC address.
  * This address setting will override the factory programmed address.
  * Use all 0's to use the factory programmed address */
-//#define configMAC_ADDR0           0x68
-//#define configMAC_ADDR1           0x27
-//#define configMAC_ADDR2           0x19
-//#define configMAC_ADDR3           0x29
-//#define configMAC_ADDR4           0x6f
-//#define configMAC_ADDR5           0x36
- 
-#define configMAC_ADDR0           0x68
-#define configMAC_ADDR1           0x27
-#define configMAC_ADDR2           0x19
-#define configMAC_ADDR3           0x00
-#define configMAC_ADDR4           0x00
-#define configMAC_ADDR5           0x00
+#define configMAC_ADDR0           0x00
+#define configMAC_ADDR1           0x11
+#define configMAC_ADDR2           0x22
+#define configMAC_ADDR3           0x33
+#define configMAC_ADDR4           0x44
+#define configMAC_ADDR5           0x21
+
 /* Default IP address configuration.  Used in ipconfigUSE_DHCP is set to 0, or
  * ipconfigUSE_DHCP is set to 1 but a DNS server cannot be contacted. */
 #define configIP_ADDR0            192

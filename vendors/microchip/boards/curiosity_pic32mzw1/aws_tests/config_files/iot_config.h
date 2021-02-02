@@ -24,10 +24,14 @@
 #ifndef IOT_CONFIG_H_
 #define IOT_CONFIG_H_
 
+/* Standard include. */
+#include <stdbool.h>
+
 /* How long the MQTT library will wait for PINGRESPs or PUBACKs. */
 #define IOT_MQTT_RESPONSE_WAIT_MS            ( 1000 ) 
 
-#define IOT_NETWORK_SOCKET_POLL_MS     ( 2000 ) 
+#define IOT_NETWORK_SOCKET_POLL_MS     ( 2000 )
+
 
 /* MQTT demo configuration. */
 #define IOT_DEMO_MQTT_PUBLISH_BURST_COUNT    ( 10 )
@@ -54,6 +58,7 @@
 
 /* Platform thread stack size and priority. */
 #define IOT_THREAD_DEFAULT_STACK_SIZE    2048
+/* Platform thread priority. */
 #define IOT_THREAD_DEFAULT_PRIORITY      5
 
 /* Include the common configuration file for FreeRTOS. */

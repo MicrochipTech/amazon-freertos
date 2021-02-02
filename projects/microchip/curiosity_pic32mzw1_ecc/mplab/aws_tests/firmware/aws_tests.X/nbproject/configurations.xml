@@ -6,10 +6,10 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="aws_tests" projectFiles="true">
-          <logicalFolder name="f3" displayName="bsp" projectFiles="true">
+          <logicalFolder name="f2" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/aws_tests/bsp/bsp.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f5" displayName="crypto" projectFiles="true">
+          <logicalFolder name="f7" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/aws_tests/crypto/crypto.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="driver" projectFiles="true">
@@ -46,16 +46,16 @@
             <itemPath>../src/config/aws_tests/driver/driver.h</itemPath>
             <itemPath>../src/config/aws_tests/driver/driver_common.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="library" displayName="library" projectFiles="true">
-            <logicalFolder name="cryptoauthlib"
-                           displayName="cryptoauthlib"
-                           projectFiles="true">
-              <logicalFolder name="pkcs11" displayName="pkcs11" projectFiles="true">
+          <logicalFolder name="f3" displayName="library" projectFiles="true">
+            <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="f2" displayName="pkcs11" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/cryptoki.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11f.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11t.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_attrib.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_cert.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_config.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_config.h.in</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_debug.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_digest.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_find.h</itemPath>
@@ -70,64 +70,74 @@
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_slot.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_token.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_util.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11f.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11t.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_config.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="tng" displayName="tng" projectFiles="true">
+              <logicalFolder name="f1" displayName="tng" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tflxtls_cert_def_4_device.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_atca.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_atcacert_client.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_root_cert.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tnglora_cert_def_1_signer.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tnglora_cert_def_2_device.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tnglora_cert_def_4_device.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tngtls_cert_def_1_signer.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tngtls_cert_def_2_device.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tngtls_cert_def_3_device.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_atca.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_atcacert_client.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_root_cert.h</itemPath>
               </logicalFolder>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_config.h</itemPath>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/aws_tests/osal/osal.h</itemPath>
+            <itemPath>../src/config/aws_tests/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/aws_tests/osal/osal_freertos.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f4" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+            <logicalFolder name="f5" displayName="clk" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="coretimer" projectFiles="true">
+            <logicalFolder name="f2" displayName="coretimer" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/coretimer/plib_coretimer.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="evic" projectFiles="true">
+            <logicalFolder name="f7" displayName="evic" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f6" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="nvm" projectFiles="true">
+            <logicalFolder name="f8" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/aws_tests/peripheral/i2c/master/plib_i2c2_master.h</itemPath>
+                <itemPath>../src/config/aws_tests/peripheral/i2c/master/plib_i2c_master_common.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="nvm" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/nvm/plib_nvm.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="rng" projectFiles="true">
+            <logicalFolder name="f4" displayName="rng" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/rng/plib_rng.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="uart" projectFiles="true">
+            <logicalFolder name="f3" displayName="uart" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/aws_tests/peripheral/uart/plib_uart1.h</itemPath>
               <itemPath>../src/config/aws_tests/peripheral/uart/plib_uart2.h</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f2" displayName="system" projectFiles="true">
-            <logicalFolder name="f1" displayName="command" projectFiles="true">
+          <logicalFolder name="f5" displayName="system" projectFiles="true">
+            <logicalFolder name="f4" displayName="command" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/command/sys_command.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="console" projectFiles="true">
+            <logicalFolder name="f5" displayName="console" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/console/sys_console.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="debug" projectFiles="true">
+            <logicalFolder name="f3" displayName="debug" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/debug/sys_debug.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="int" projectFiles="true">
+            <logicalFolder name="f2" displayName="int" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/int/sys_int.h</itemPath>
               <itemPath>../src/config/aws_tests/system/int/sys_int_mapping.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="time" projectFiles="true">
+            <logicalFolder name="f1" displayName="time" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/time/sys_time.h</itemPath>
               <itemPath>../src/config/aws_tests/system/time/sys_time_definitions.h</itemPath>
               <itemPath>../src/config/aws_tests/system/time/src/sys_time_local.h</itemPath>
@@ -137,18 +147,13 @@
             <itemPath>../src/config/aws_tests/system/system_module.h</itemPath>
           </logicalFolder>
           <itemPath>../src/config/aws_tests/system_definitions.h</itemPath>
-          <itemPath>../src/config/aws_tests/toolchain_specifics.h</itemPath>
-          <itemPath>../src/config/aws_tests/definitions.h</itemPath>
-          <itemPath>../src/config/aws_tests/config.h</itemPath>
           <itemPath>../src/config/aws_tests/device.h</itemPath>
           <itemPath>../src/config/aws_tests/user.h</itemPath>
           <itemPath>../src/config/aws_tests/configuration.h</itemPath>
+          <itemPath>../src/config/aws_tests/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/aws_tests/definitions.h</itemPath>
+          <itemPath>../src/config/aws_tests/config.h</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f4" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/aws_tests/osal/osal_freertos.h</itemPath>
-        <itemPath>../src/config/aws_tests/osal/osal.h</itemPath>
-        <itemPath>../src/config/aws_tests/osal/osal_definitions.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfcrypt" projectFiles="true">
         <logicalFolder name="f1" displayName="port" projectFiles="true">
@@ -302,7 +307,7 @@
                    projectFiles="true">
       <logicalFolder name="f2" displayName="amazon-freertos" projectFiles="true">
         <logicalFolder name="f4" displayName="demos" projectFiles="true">
-          <logicalFolder name="f3"
+          <logicalFolder name="f1"
                          displayName="dev_mode_key_provisioning"
                          projectFiles="true">
             <logicalFolder name="f1" displayName="include" projectFiles="true">
@@ -359,11 +364,7 @@
         <logicalFolder name="f2" displayName="libraries" projectFiles="true">
           <logicalFolder name="f3" displayName="3rdparty" projectFiles="true">
             <logicalFolder name="f1" displayName="http_parser" projectFiles="true">
-              <itemPath>../../../../../../../libraries/3rdparty/http_parser/.mailmap</itemPath>
-              <itemPath>../../../../../../../libraries/3rdparty/http_parser/.travis.yml</itemPath>
-              <itemPath>../../../../../../../libraries/3rdparty/http_parser/AUTHORS</itemPath>
               <itemPath>../../../../../../../libraries/3rdparty/http_parser/http_parser.c</itemPath>
-              <itemPath>../../../../../../../libraries/3rdparty/http_parser/http_parser.gyp</itemPath>
               <itemPath>../../../../../../../libraries/3rdparty/http_parser/http_parser.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="jsmn" projectFiles="true">
@@ -529,6 +530,21 @@
               <itemPath>../../../../../../../libraries/3rdparty/pkcs11/pkcs11f.h</itemPath>
               <itemPath>../../../../../../../libraries/3rdparty/pkcs11/pkcs11t.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f5" displayName="tinycbor" projectFiles="true">
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cbor.h</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborencoder.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborencoder_close_container_checked.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborerrorstrings.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborinternal_p.h</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborparser.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborparser_dup_string.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborpretty.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborpretty_stdio.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/cborvalidation.c</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/compilersupport_p.h</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/tinycbor-version.h</itemPath>
+              <itemPath>../../../../../../../libraries/3rdparty/tinycbor/utf8_p.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f6" displayName="tinycrypt" projectFiles="true">
               <logicalFolder name="f1" displayName="asn1" projectFiles="true">
                 <itemPath>../../../../../../../libraries/3rdparty/tinycrypt/asn1/asn1.h</itemPath>
@@ -576,13 +592,13 @@
               <itemPath>../../../../../../../libraries/3rdparty/tinycrypt/README</itemPath>
               <itemPath>../../../../../../../libraries/3rdparty/tinycrypt/VERSION</itemPath>
             </logicalFolder>
-            <logicalFolder name="unity" displayName="unity" projectFiles="true">
-              <logicalFolder name="extras" displayName="extras" projectFiles="true">
-                <logicalFolder name="eclipse" displayName="eclipse" projectFiles="true">
+            <logicalFolder name="f7" displayName="unity" projectFiles="true">
+              <logicalFolder name="f1" displayName="extras" projectFiles="true">
+                <logicalFolder name="f1" displayName="eclipse" projectFiles="true">
                   <itemPath>../../../../../../../libraries/3rdparty/unity/extras/eclipse/error_parsers.txt</itemPath>
                 </logicalFolder>
-                <logicalFolder name="fixture" displayName="fixture" projectFiles="true">
-                  <logicalFolder name="src" displayName="src" projectFiles="true">
+                <logicalFolder name="f2" displayName="fixture" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
                     <itemPath>../../../../../../../libraries/3rdparty/unity/extras/fixture/src/unity_fixture.c</itemPath>
                     <itemPath>../../../../../../../libraries/3rdparty/unity/extras/fixture/src/unity_fixture.h</itemPath>
                     <itemPath>../../../../../../../libraries/3rdparty/unity/extras/fixture/src/unity_fixture_internals.h</itemPath>
@@ -590,7 +606,7 @@
                   </logicalFolder>
                 </logicalFolder>
               </logicalFolder>
-              <logicalFolder name="src" displayName="src" projectFiles="true">
+              <logicalFolder name="f2" displayName="src" projectFiles="true">
                 <itemPath>../../../../../../../libraries/3rdparty/unity/src/unity.c</itemPath>
                 <itemPath>../../../../../../../libraries/3rdparty/unity/src/unity.h</itemPath>
                 <itemPath>../../../../../../../libraries/3rdparty/unity/src/unity_internals.h</itemPath>
@@ -598,53 +614,18 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f1" displayName="abstractions" projectFiles="true">
-            <logicalFolder name="f3" displayName="ble_hal" projectFiles="true">
-              <logicalFolder name="f1" displayName="include" projectFiles="true">
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_avsrc_profile.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_gatt_client.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_gatt_server.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_gatt_types.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_manager.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_manager_adapter_ble.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_manager_adapter_classic.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/ble_hal/include/bt_hal_manager_types.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-            <logicalFolder name="f4" displayName="common_io" projectFiles="true">
-              <logicalFolder name="f1" displayName="include" projectFiles="true">
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_adc.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_battery.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_efuse.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_flash.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_gpio.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_hw.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_i2c.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_i2s.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_perfcounter.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_power.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_pwm.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_reset.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_rtc.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_spi.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_timer.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_tsensor.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_uart.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_usb_device.h</itemPath>
-                <itemPath>../../../../../../../libraries/abstractions/common_io/include/iot_watchdog.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-            <logicalFolder name="f1" displayName="pkcs11" projectFiles="true">
+            <logicalFolder name="f2" displayName="pkcs11" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/pkcs11/include/iot_pkcs11_pal.h</itemPath>
               </logicalFolder>
               <logicalFolder name="f2" displayName="mbedtls" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/pkcs11/mbedtls/threading_alt.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="test" displayName="test" projectFiles="true">
+              <logicalFolder name="f3" displayName="test" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/pkcs11/test/iot_test_pkcs11.c</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="platform" projectFiles="true">
+            <logicalFolder name="f4" displayName="platform" projectFiles="true">
               <logicalFolder name="f1" displayName="freertos" projectFiles="true">
                 <logicalFolder name="f1" displayName="include" projectFiles="true">
                   <logicalFolder name="f1" displayName="platform" projectFiles="true">
@@ -669,8 +650,12 @@
                   <itemPath>../../../../../../../libraries/abstractions/platform/include/types/iot_platform_types.h</itemPath>
                 </logicalFolder>
               </logicalFolder>
+              <logicalFolder name="f3" displayName="test" projectFiles="true">
+                <itemPath>../../../../../../../libraries/abstractions/platform/test/iot_test_platform_clock.c</itemPath>
+                <itemPath>../../../../../../../libraries/abstractions/platform/test/iot_test_platform_threads.c</itemPath>
+              </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="posix" projectFiles="true">
+            <logicalFolder name="f5" displayName="posix" projectFiles="true">
               <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <logicalFolder name="f1" displayName="FreeRTOS_POSIX" projectFiles="true">
                   <logicalFolder name="f1" displayName="sys" projectFiles="true">
@@ -689,7 +674,7 @@
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="secure_sockets" projectFiles="true">
+            <logicalFolder name="f3" displayName="secure_sockets" projectFiles="true">
               <logicalFolder name="f1" displayName="freertos_plus_tcp" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/freertos_plus_tcp/iot_secure_sockets.c</itemPath>
               </logicalFolder>
@@ -698,15 +683,16 @@
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/include/iot_secure_sockets_config_defaults.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/include/iot_secure_sockets_wrapper_metrics.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="test" displayName="test" projectFiles="true">
+              <logicalFolder name="f3" displayName="test" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/secure_sockets/test/iot_test_tcp.c</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="wifi" displayName="wifi" projectFiles="true">
-              <logicalFolder name="include" displayName="include" projectFiles="true">
+            <logicalFolder name="f1" displayName="wifi" projectFiles="true">
+              <logicalFolder name="f1" displayName="include" projectFiles="true">
                 <itemPath>../../../../../../../libraries/abstractions/wifi/include/iot_wifi.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="test" displayName="test" projectFiles="true">
+              <logicalFolder name="f2" displayName="test" projectFiles="true">
+                <itemPath>../../../../../../../libraries/abstractions/wifi/test/iot_test_wifi.h</itemPath>
                 <itemPath>../../../../../../../libraries/abstractions/wifi/test/iot_test_wifi.c</itemPath>
               </logicalFolder>
             </logicalFolder>
@@ -726,6 +712,9 @@
                   <itemPath>../../../../../../../libraries/c_sdk/aws/defender/src/aws_iot_defender_collector.c</itemPath>
                   <itemPath>../../../../../../../libraries/c_sdk/aws/defender/src/aws_iot_defender_mqtt.c</itemPath>
                   <itemPath>../../../../../../../libraries/c_sdk/aws/defender/src/aws_iot_defender_v1.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
+                  <itemPath>../../../../../../../libraries/c_sdk/aws/defender/test/aws_iot_tests_defender_api.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
               <logicalFolder name="f2" displayName="shadow" projectFiles="true">
@@ -782,6 +771,10 @@
                   <itemPath>../../../../../../../libraries/c_sdk/standard/common/taskpool/iot_taskpool.c</itemPath>
                   <itemPath>../../../../../../../libraries/c_sdk/standard/common/taskpool/iot_taskpool_static_memory.c</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="test" projectFiles="true">
+                  <itemPath>../../../../../../../libraries/c_sdk/standard/common/test/iot_memory_leak.c</itemPath>
+                  <itemPath>../../../../../../../libraries/c_sdk/standard/common/test/iot_tests_taskpool.c</itemPath>
+                </logicalFolder>
                 <itemPath>../../../../../../../libraries/c_sdk/standard/common/iot_device_metrics.c</itemPath>
                 <itemPath>../../../../../../../libraries/c_sdk/standard/common/iot_init.c</itemPath>
                 <itemPath>../../../../../../../libraries/c_sdk/standard/common/iot_static_memory_common.c</itemPath>
@@ -826,11 +819,11 @@
                   <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/src/iot_mqtt_subscription.c</itemPath>
                   <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/src/iot_mqtt_validate.c</itemPath>
                 </logicalFolder>
-                <logicalFolder name="test" displayName="test" projectFiles="true">
-                  <logicalFolder name="system" displayName="system" projectFiles="true">
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
+                  <logicalFolder name="f1" displayName="system" projectFiles="true">
                     <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/test/system/iot_tests_mqtt_system.c</itemPath>
                   </logicalFolder>
-                  <logicalFolder name="unit" displayName="unit" projectFiles="true">
+                  <logicalFolder name="f2" displayName="unit" projectFiles="true">
                     <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/test/unit/iot_tests_mqtt_api.c</itemPath>
                     <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/test/unit/iot_tests_mqtt_metrics.c</itemPath>
                     <itemPath>../../../../../../../libraries/c_sdk/standard/mqtt/test/unit/iot_tests_mqtt_receive.c</itemPath>
@@ -872,31 +865,17 @@
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/src/aws_helper_secure_connect.c</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/src/aws_helper_secure_connect.h</itemPath>
                 </logicalFolder>
-                <logicalFolder name="test" displayName="test" projectFiles="true">
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_test_greengrass_discovery.c</itemPath>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_test_helper_secure_connect.c</itemPath>
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_greengrass_discovery_test_access_declare.h</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_greengrass_discovery_test_access_define.h</itemPath>
+                  <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_test_greengrass_discovery.c</itemPath>
+                  <itemPath>../../../../../../../libraries/freertos_plus/aws/greengrass/test/aws_test_helper_secure_connect.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
               <logicalFolder name="f2" displayName="ota" projectFiles="true">
                 <logicalFolder name="f1" displayName="include" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/include/aws_iot_ota_agent.h</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/include/aws_iot_ota_types.h</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f2" displayName="src" projectFiles="true">
-                  <logicalFolder name="f1" displayName="mqtt" projectFiles="true">
-                    <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/mqtt/aws_iot_ota_cbor.c</itemPath>
-                    <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/mqtt/aws_iot_ota_cbor_internal.h</itemPath>
-                    <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/mqtt/aws_iot_ota_cbor.h</itemPath>
-                    <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/mqtt/aws_iot_ota_mqtt.c</itemPath>
-                    <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/mqtt/aws_iot_ota_mqtt.h</itemPath>
-                  </logicalFolder>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/aws_iot_ota_agent.c</itemPath>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/aws_iot_ota_agent_internal.h</itemPath>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/aws_iot_ota_interface.c</itemPath>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/aws_iot_ota_interface.h</itemPath>
-                  <itemPath>../../../../../../../libraries/freertos_plus/aws/ota/src/aws_iot_ota_pal.h</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -907,6 +886,9 @@
                 </logicalFolder>
                 <logicalFolder name="f2" displayName="src" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/crypto/src/iot_crypto.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
+                  <itemPath>../../../../../../../libraries/freertos_plus/standard/crypto/test/iot_test_crypto.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
               <logicalFolder name="f1" displayName="freertos_plus_tcp" projectFiles="true">
@@ -936,9 +918,7 @@
                       </logicalFolder>
                     </logicalFolder>
                     <logicalFolder name="f2" displayName="NetworkInterface" projectFiles="true">
-                      <logicalFolder name="pic32mzw1_h3"
-                                     displayName="pic32mzw1_h3"
-                                     projectFiles="true">
+                      <logicalFolder name="f1" displayName="pic32mzw1_h3" projectFiles="true">
                         <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3/BufferAllocation_2.c</itemPath>
                         <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3/NetworkInterface_wifi.c</itemPath>
                       </logicalFolder>
@@ -955,11 +935,11 @@
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/FreeRTOS_UDP_IP.c</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/ReadMe.url</itemPath>
                 </logicalFolder>
-                <logicalFolder name="test" displayName="test" projectFiles="true">
-                  <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test/iot_test_freertos_tcp.c</itemPath>
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test/iot_freertos_tcp_test_access_declare.h</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test/iot_freertos_tcp_test_access_dns_define.h</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test/iot_freertos_tcp_test_access_tcp_define.h</itemPath>
+                  <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test/iot_test_freertos_tcp.c</itemPath>
                 </logicalFolder>
                 <itemPath>../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/uncrustify.cfg</itemPath>
               </logicalFolder>
@@ -978,7 +958,7 @@
                 <logicalFolder name="f2" displayName="src" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/tls/src/iot_tls.c</itemPath>
                 </logicalFolder>
-                <logicalFolder name="test" displayName="test" projectFiles="true">
+                <logicalFolder name="f3" displayName="test" projectFiles="true">
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/tls/test/iot_test_tls.c</itemPath>
                   <itemPath>../../../../../../../libraries/freertos_plus/standard/tls/test/iot_test_tls.h</itemPath>
                 </logicalFolder>
@@ -996,15 +976,15 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="tests" displayName="tests" projectFiles="true">
-          <logicalFolder name="common" displayName="common" projectFiles="true">
+        <logicalFolder name="f5" displayName="tests" projectFiles="true">
+          <logicalFolder name="f1" displayName="common" projectFiles="true">
             <itemPath>../../../../../../../tests/common/aws_test.c</itemPath>
             <itemPath>../../../../../../../tests/common/aws_test_framework.c</itemPath>
             <itemPath>../../../../../../../tests/common/aws_test_runner.c</itemPath>
             <itemPath>../../../../../../../tests/common/iot_tests_network.c</itemPath>
             <itemPath>../../../../../../../tests/common/iot_test_freertos.c</itemPath>
           </logicalFolder>
-          <logicalFolder name="include" displayName="include" projectFiles="true">
+          <logicalFolder name="f2" displayName="include" projectFiles="true">
             <itemPath>../../../../../../../tests/include/aws_application_version.h</itemPath>
             <itemPath>../../../../../../../tests/include/aws_clientcredential.h</itemPath>
             <itemPath>../../../../../../../tests/include/aws_clientcredential_keys.h</itemPath>
@@ -1021,13 +1001,11 @@
             <logicalFolder name="f1" displayName="boards" projectFiles="true">
               <logicalFolder name="f1" displayName="curiosity_pic32mzw1" projectFiles="true">
                 <logicalFolder name="f1" displayName="aws_tests" projectFiles="true">
-                  <logicalFolder name="application_code"
-                                 displayName="application_code"
-                                 projectFiles="true">
+                  <logicalFolder name="f1" displayName="application_code" projectFiles="true">
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code/atca_cert_chain.c</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code/atca_cert_chain.h</itemPath>
                   </logicalFolder>
-                  <logicalFolder name="f1" displayName="config_files" projectFiles="true">
+                  <logicalFolder name="f2" displayName="config_files" projectFiles="true">
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_demo_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_ggd_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_iot_network_config.h</itemPath>
@@ -1035,30 +1013,31 @@
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_ota_agent_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_secure_sockets_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_shadow_config.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_wifi_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_ota_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_runner_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_tcp_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_wifi_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/FreeRTOSConfig.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/FreeRTOSIPConfig.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/iot_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/iot_mqtt_agent_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/iot_pkcs11_config.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/NetworkConfig.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_ota_config.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_runner_config.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_tcp_config.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_test_wifi_config.h</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/iot_test_pkcs11_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/NetworkConfig.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/unity_config.h</itemPath>
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files/aws_wifi_config.h</itemPath>
                   </logicalFolder>
                 </logicalFolder>
                 <logicalFolder name="f2" displayName="ports" projectFiles="true">
-                  <logicalFolder name="f2" displayName="pkcs11" projectFiles="true">
+                  <logicalFolder name="f1" displayName="pkcs11" projectFiles="true">
+                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11/iot_pkcs11_secure_element.c</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11/pkcs11_nvm.c</itemPath>
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11/pkcs11_nvm.h</itemPath>
-                    <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11/iot_pkcs11_secure_element.c</itemPath>
                   </logicalFolder>
-                  <logicalFolder name="f3" displayName="posix" projectFiles="true">
+                  <logicalFolder name="f2" displayName="posix" projectFiles="true">
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/posix/FreeRTOS_POSIX_portable.h</itemPath>
                   </logicalFolder>
-                  <logicalFolder name="wifi" displayName="wifi" projectFiles="true">
+                  <logicalFolder name="f3" displayName="wifi" projectFiles="true">
                     <itemPath>../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/wifi/iot_wifi.c</itemPath>
                   </logicalFolder>
                 </logicalFolder>
@@ -1120,10 +1099,10 @@
       </logicalFolder>
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="aws_tests" projectFiles="true">
-          <logicalFolder name="f3" displayName="bsp" projectFiles="true">
+          <logicalFolder name="f2" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/aws_tests/bsp/bsp.c</itemPath>
           </logicalFolder>
-          <logicalFolder name="f6" displayName="crypto" projectFiles="true">
+          <logicalFolder name="f8" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/aws_tests/crypto/src/crypto.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="driver" projectFiles="true">
@@ -1149,42 +1128,44 @@
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="library" displayName="library" projectFiles="true">
-            <logicalFolder name="cryptoauthlib"
-                           displayName="cryptoauthlib"
-                           projectFiles="true">
-              <logicalFolder name="app" displayName="app" projectFiles="true">
-                <logicalFolder name="pkcs11" displayName="pkcs11" projectFiles="true">
+          <logicalFolder name="f3" displayName="library" projectFiles="true">
+            <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="f9" displayName="app" projectFiles="true">
+                <logicalFolder name="f1" displayName="pkcs11" projectFiles="true">
                   <itemPath>../src/config/aws_tests/library/cryptoauthlib/app/pkcs11/trust_pkcs11_config.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
-              <logicalFolder name="atcacert" displayName="atcacert" projectFiles="true">
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_client.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_date.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_def.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_der.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_hw.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_sw.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_pem.c</itemPath>
+              <logicalFolder name="f5" displayName="atcacert" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_client.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_client.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_date.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_date.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_def.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_def.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_der.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_der.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_hw.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_hw.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_sw.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_host_sw.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_pem.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/atcacert/atcacert_pem.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="calib" displayName="calib" projectFiles="true">
+              <logicalFolder name="f6" displayName="calib" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_aes.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_aes_gcm.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_aes_gcm.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_basic.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_basic.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_checkmac.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_command.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_command.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_counter.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_derivekey.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_ecdh.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_execution.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_execution.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_gendig.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_genkey.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_hmac.c</itemPath>
@@ -1203,52 +1184,48 @@
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_updateextra.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_verify.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_write.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_aes_gcm.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_basic.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_command.h</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/calib/calib_execution.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
-                <logicalFolder name="hashes" displayName="hashes" projectFiles="true">
+              <logicalFolder name="f3" displayName="crypto" projectFiles="true">
+                <logicalFolder name="f1" displayName="hashes" projectFiles="true">
                   <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/hashes/sha1_routines.c</itemPath>
-                  <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/hashes/sha2_routines.c</itemPath>
                   <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/hashes/sha1_routines.h</itemPath>
+                  <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/hashes/sha2_routines.c</itemPath>
                   <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/hashes/sha2_routines.h</itemPath>
                 </logicalFolder>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_hw_aes.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbc.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cmac.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ctr.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_rand.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_hw_aes.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_rand.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_rand.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="hal" displayName="hal" projectFiles="true">
+              <logicalFolder name="f2" displayName="hal" projectFiles="true">
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/ATECC608_0.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/atca_hal.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/ATECC608A_0.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_freertos.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_i2c_harmony_init.c</itemPath>
-                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_pic32_delay.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/atca_hal.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/atca_start_config.h</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/atca_start_iface.h</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_freertos.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_harmony_init.c</itemPath>
+                <itemPath>../src/config/aws_tests/library/cryptoauthlib/hal/hal_pic32_delay.c</itemPath>
               </logicalFolder>
-              <logicalFolder name="host" displayName="host" projectFiles="true">
+              <logicalFolder name="f7" displayName="host" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/host/atca_host.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/host/atca_host.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="jwt" displayName="jwt" projectFiles="true">
+              <logicalFolder name="f4" displayName="jwt" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/jwt/atca_jwt.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/jwt/atca_jwt.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="pkcs11" displayName="pkcs11" projectFiles="true">
+              <logicalFolder name="f8" displayName="pkcs11" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_attrib.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_cert.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_config.c</itemPath>
@@ -1268,7 +1245,7 @@
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_token.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/pkcs11/pkcs11_util.c</itemPath>
               </logicalFolder>
-              <logicalFolder name="tng" displayName="tng" projectFiles="true">
+              <logicalFolder name="f1" displayName="tng" projectFiles="true">
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tflxtls_cert_def_4_device.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tnglora_cert_def_1_signer.c</itemPath>
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tnglora_cert_def_2_device.c</itemPath>
@@ -1281,90 +1258,91 @@
                 <itemPath>../src/config/aws_tests/library/cryptoauthlib/tng/tng_root_cert.c</itemPath>
               </logicalFolder>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_basic.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_cfgs.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_command.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_debug.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_device.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_helpers.c</itemPath>
-              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_iface.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_basic.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_bool.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_cfgs.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_cfgs.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_command.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_command.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_compiler.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_debug.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_debug.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_device.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_device.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_devtypes.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_helpers.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_helpers.h</itemPath>
+              <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_iface.c</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_iface.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_status.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/atca_version.h</itemPath>
               <itemPath>../src/config/aws_tests/library/cryptoauthlib/cryptoauthlib.h</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f5" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/aws_tests/osal/osal_freertos.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f5" displayName="clk" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="coretimer" projectFiles="true">
+            <logicalFolder name="f2" displayName="coretimer" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/coretimer/plib_coretimer.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="evic" projectFiles="true">
+            <logicalFolder name="f7" displayName="evic" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/evic/plib_evic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f6" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="i2c" displayName="i2c" projectFiles="true">
-              <logicalFolder name="master" displayName="master" projectFiles="true">
+            <logicalFolder name="f8" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
                 <itemPath>../src/config/aws_tests/peripheral/i2c/master/plib_i2c2_master.c</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="nvm" projectFiles="true">
+            <logicalFolder name="f1" displayName="nvm" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/nvm/plib_nvm.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="rng" projectFiles="true">
+            <logicalFolder name="f4" displayName="rng" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/rng/plib_rng.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="uart" projectFiles="true">
+            <logicalFolder name="f3" displayName="uart" projectFiles="true">
               <itemPath>../src/config/aws_tests/peripheral/uart/plib_uart1.c</itemPath>
               <itemPath>../src/config/aws_tests/peripheral/uart/plib_uart2.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f4" displayName="stdio" projectFiles="true">
+          <logicalFolder name="f7" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/aws_tests/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
-          <logicalFolder name="f2" displayName="system" projectFiles="true">
-            <logicalFolder name="f1" displayName="command" projectFiles="true">
+          <logicalFolder name="f5" displayName="system" projectFiles="true">
+            <logicalFolder name="f4" displayName="command" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/command/src/sys_command.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="console" projectFiles="true">
-              <itemPath>../src/config/aws_tests/system/console/src/sys_console.c</itemPath>
-              <itemPath>../src/config/aws_tests/system/console/src/sys_console_local.h</itemPath>
+            <logicalFolder name="f2" displayName="console" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/console/src/sys_console_uart.h</itemPath>
               <itemPath>../src/config/aws_tests/system/console/src/sys_console_uart_definitions.h</itemPath>
               <itemPath>../src/config/aws_tests/system/console/src/sys_console_uart.c</itemPath>
+              <itemPath>../src/config/aws_tests/system/console/src/sys_console.c</itemPath>
+              <itemPath>../src/config/aws_tests/system/console/src/sys_console_local.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="debug" projectFiles="true">
+            <logicalFolder name="f5" displayName="debug" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/debug/src/sys_debug_local.h</itemPath>
               <itemPath>../src/config/aws_tests/system/debug/src/sys_debug.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="int" projectFiles="true">
+            <logicalFolder name="f3" displayName="int" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/int/src/sys_int.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="time" projectFiles="true">
+            <logicalFolder name="f1" displayName="time" projectFiles="true">
               <itemPath>../src/config/aws_tests/system/time/src/sys_time.c</itemPath>
             </logicalFolder>
           </logicalFolder>
+          <itemPath>../src/config/aws_tests/tasks.c</itemPath>
           <itemPath>../src/config/aws_tests/initialization.c</itemPath>
           <itemPath>../src/config/aws_tests/interrupts.c</itemPath>
+          <itemPath>../src/config/aws_tests/interrupts_a.S</itemPath>
           <itemPath>../src/config/aws_tests/exceptions.c</itemPath>
           <itemPath>../src/config/aws_tests/system_pmu_mldo_trim.c</itemPath>
-          <itemPath>../src/config/aws_tests/tasks.c</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="osal" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/aws_tests/osal/osal_freertos.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="wolfcrypt" projectFiles="true">
         <logicalFolder name="f1" displayName="port" projectFiles="true">
@@ -1460,8 +1438,8 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha256.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha512.c</itemPath>
       </logicalFolder>
-      <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
+      <itemPath>../src/main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -1472,7 +1450,7 @@
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/aws_tests/harmony.prj</itemPath>
-      <itemPath>../src/config/aws_tests/default.xml</itemPath>
+      <itemPath>../src/config/aws_tests/aws_tests.xml</itemPath>
       <itemPath>../src/config/aws_tests/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -1489,7 +1467,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1531,7 +1509,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/config/aws_tests/driver/wifi/pic32mzw1/include/;../../../../../../../freertos_kernel/include;../../../../../../../libraries/abstractions/platform/freertos/include;../../../../../../../libraries/abstractions/secure_sockets/include;../../../../../../../libraries/abstractions/pkcs11/include;../../../../../../../libraries/c_sdk/aws/defender/include;../../../../../../../libraries/c_sdk/aws/shadow/include;../../../../../../../libraries/c_sdk/standard/common/include;../../../../../../../libraries/c_sdk/standard/https/include;../../../../../../../libraries/c_sdk/standard/mqtt/include;../../../../../../../libraries/c_sdk/standard/serializer/include;../../../../../../../libraries/freertos_plus/aws/greengrass/include;../../../../../../../libraries/freertos_plus/aws/ota/include;../../../../../../../libraries/freertos_plus/standard/crypto/include;../../../../../../../libraries/freertos_plus/standard/utils/include;../../../../../../../libraries/freertos_plus/standard/tls/include;../../../../../../../libraries/freertos_plus/standard/pkcs11/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include;../../../../../../../libraries/abstractions/platform/include;../../../../../../../libraries/c_sdk/standard/common/include/private;../../../../../../../libraries/c_sdk/standard/common/include/types;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC;../../../../../../../libraries/3rdparty/jsmn;../../../../../../../libraries/3rdparty/mbedtls/include;../../../../../../../libraries/3rdparty/tinycbor;../../../../../../../libraries/3rdparty/pkcs11;../../../../../../../libraries/3rdparty/tinycrypt/asn1;../../../../../../../libraries/3rdparty/tinycrypt/lib/include;../../../../../../../demos/dev_mode_key_provisioning/include;../../../../../../../libraries/abstractions/pkcs11/mbedtls;../../../../../../../libraries/3rdparty/http_parser;../../../../../../../libraries/freertos_plus/aws/ota/src;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11;../../../../../../../vendors/microchip/harmony3/afr;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/posix;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code;../../../../../../../freertos_kernel/portable/MPLAB/PIC32MZ;../../../../../../../vendors/microchip/harmony3/afr/tcpip/src/common;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3;../src;../src/config/aws_tests;../src/packs/PIC32MZ1025W104132_DFP;../../../../../../../libraries/abstractions/wifi/include;..\..\..\..\..\..\..\tests\include;..\..\..\..\..\..\..\libraries\3rdparty\unity\src;..\..\..\..\..\..\..\libraries\3rdparty\unity\extras\fixture\src;..\..\..\..\..\..\..\libraries\c_sdk\standard\mqtt\src;..\..\..\..\..\..\..\libraries\c_sdk\standard\mqtt\include;..\..\..\..\..\..\..\libraries\c_sdk\standard\mqtt\src\private;..\..\..\..\..\..\..\libraries\c_sdk\standard\https\test\access;..\..\..\..\..\..\..\libraries\c_sdk\standard\mqtt\test\access;../../../../../../../libraries/freertos_plus/aws/ota/test;..\src\third_party\wolfssl;..\src\third_party\wolfssl\wolfssl;..\..\..\..\..\..\..\libraries\freertos_plus\standard\freertos_plus_tcp\test;..\..\..\..\..\..\..\libraries\abstractions\secure_sockets\test;..\..\..\..\..\..\..\libraries\abstractions\wifi\test;..\..\..\..\..\..\..\libraries\freertos_plus\aws\greengrass\test;..\..\..\..\..\..\..\libraries\freertos_plus\aws\greengrass\src;..\..\..\..\..\..\..\libraries\abstractions\pkcs11\test;..\..\..\..\..\..\..\libraries\freertos_plus\standard\tls\test;..\src\config\aws_tests\library;..\src\config\aws_tests\library\cryptoauthlib;..\src\config\aws_tests\library\cryptoauthlib\pkcs11;..\src\config\aws_tests\library\cryptoauthlib\tng"/>
+                  value="../src/config/aws_tests/library/cryptoauthlib;../src/config/aws_tests/library/cryptoauthlib/crypto;../src/config/aws_tests/library/cryptoauthlib/pkcs11;../src/config/aws_tests/driver/wifi/pic32mzw1/include/;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/aws_tests;../src/packs/PIC32MZ1025W104132_DFP;../../../../../../../freertos_kernel/include;../../../../../../../libraries/c_sdk/standard/common/include;../../../../../../../libraries/freertos_plus/standard/crypto/include;../../../../../../../libraries/freertos_plus/standard/tls/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC;../../../../../../../libraries/abstractions/pkcs11/include;../../../../../../../tests/include;../../../../../../../libraries/c_sdk/standard/common/include/private;../../../../../../../libraries/abstractions/platform/include;../../../../../../../libraries/abstractions/platform/freertos/include;../../../../../../../libraries/abstractions/secure_sockets/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test;../../../../../../../libraries/freertos_plus/standard/pkcs11/include;../../../../../../../libraries/freertos_plus/aws/ota/test;../../../../../../../libraries/freertos_plus/standard/utils/include;../../../../../../../demos/dev_mode_key_provisioning/include;../../../../../../../libraries/c_sdk/aws/defender/include;../../../../../../../libraries/c_sdk/standard/mqtt/test/access;../../../../../../../libraries/c_sdk/standard/mqtt/include;../../../../../../../libraries/c_sdk/standard/mqtt/src;../../../../../../../libraries/c_sdk/standard/serializer/include;../../../../../../../libraries/c_sdk/aws/shadow/include;../../../../../../../libraries/c_sdk/aws/shadow/src;../../../../../../../libraries/c_sdk/standard/https/test/access;../../../../../../../libraries/c_sdk/standard/https/include;../../../../../../../libraries/c_sdk/standard/https/src;../../../../../../../libraries/freertos_plus/aws/greengrass/test;../../../../../../../libraries/freertos_plus/aws/greengrass/include;../../../../../../../libraries/freertos_plus/aws/greengrass/src;../../../../../../../libraries/freertos_plus/aws/ota/src;../../../../../../../libraries/freertos_plus/aws/ota/include;../../../../../../../libraries/3rdparty/mbedtls/include;../../../../../../../libraries/c_sdk/aws/defender/src/private;../../../../../../../libraries/3rdparty/jsmn;../../../../../../../libraries/3rdparty/pkcs11;../../../../../../../libraries/3rdparty/tinycbor;../../../../../../../libraries/3rdparty/tinycrypt/asn1;../../../../../../../libraries/3rdparty/tinycrypt/lib/include;../../../../../../../libraries/3rdparty/mbedtls/include/mbedtls;../../../../../../../libraries/abstractions/pkcs11/mbedtls;../../../../../../../libraries/3rdparty/unity/src;../../../../../../../libraries/3rdparty/unity/extras/fixture/src;../../../../../../../libraries/3rdparty/http_parser;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11;../../../../../../../libraries/abstractions/wifi/include;../../../../../../../vendors/microchip/harmony3/afr;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/posix;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code;../../../../../../../freertos_kernel/portable/MPLAB/PIC32MZ;../../../../../../../vendors/microchip/harmony3/afr/tcpip/src/common;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3;../../../../../../../libraries/abstractions/wifi/test;../src/config/aws_tests/library/cryptoauthlib/tng"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1541,7 +1519,7 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H;__free_rtos__;PIC32_USE_RIO2_WIFI;UNITY_INCLUDE_CONFIG_H;AMAZON_FREERTOS_ENABLE_UNIT_TESTS;PIC32_USE_ECC;ATCA_TNGTLS_SUPPORT"/>
+                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H;UNITY_INCLUDE_CONFIG_H;AMAZON_FREERTOS_ENABLE_UNIT_TESTS;PIC32_USE_ECC;PIC32_USE_RIO2_WIFI;ATCA_TNGTLS_SUPPORT;CBOR_NO_FLOATING_POINT;__free_rtos__"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>
@@ -1561,7 +1539,7 @@
         <property key="expand-macros" value="false"/>
         <property key="extra-include-directories-for-assembler" value=""/>
         <property key="extra-include-directories-for-preprocessor"
-                  value="../../../../../../../freertos_kernel/include;../../../../../../../libraries/abstractions/platform/freertos/include;../../../../../../../libraries/abstractions/secure_sockets/include;../../../../../../../libraries/abstractions/pkcs11/include;../../../../../../../libraries/c_sdk/aws/defender/include;../../../../../../../libraries/c_sdk/aws/shadow/include;../../../../../../../libraries/c_sdk/standard/common/include;../../../../../../../libraries/c_sdk/standard/https/include;../../../../../../../libraries/c_sdk/standard/mqtt/include;../../../../../../../libraries/c_sdk/standard/serializer/include;../../../../../../../libraries/freertos_plus/aws/greengrass/include;../../../../../../../libraries/freertos_plus/aws/ota/include;../../../../../../../libraries/freertos_plus/standard/crypto/include;../../../../../../../libraries/freertos_plus/standard/utils/include;../../../../../../../libraries/freertos_plus/standard/tls/include;../../../../../../../libraries/freertos_plus/standard/pkcs11/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include;../../../../../../../libraries/abstractions/platform/include;../../../../../../../libraries/c_sdk/standard/common/include/private;../../../../../../../libraries/c_sdk/standard/common/include/types;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC;../../../../../../../demos/network_manager;../../../../../../../libraries/3rdparty/jsmn;../../../../../../../libraries/3rdparty/mbedtls/include;../../../../../../../libraries/3rdparty/tinycbor;../../../../../../../libraries/3rdparty/pkcs11;../../../../../../../libraries/3rdparty/tinycrypt/asn1;../../../../../../../libraries/3rdparty/tinycrypt/lib/include;../../../../../../../demos/dev_mode_key_provisioning/include;../../../../../../../libraries/abstractions/pkcs11/mbedtls;../../../../../../../libraries/3rdparty/http_parser;../../../../../../../libraries/freertos_plus/aws/ota/src;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11;../../../../../../../vendors/microchip/harmony3/afr;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/posix;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code;../../../../../../../freertos_kernel/portable/MPLAB/PIC32MZ;../../../../../../../vendors/microchip/harmony3/afr/tcpip/src/common;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzef_h3;..\..\..\..\..\..\..\tests\include"/>
+                  value="../../../../../../../freertos_kernel/include;../../../../../../../libraries/c_sdk/standard/common/include;../../../../../../../libraries/freertos_plus/standard/crypto/include;../../../../../../../libraries/freertos_plus/standard/tls/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC;../../../../../../../libraries/abstractions/pkcs11/include;../../../../../../../tests/include;../../../../../../../libraries/c_sdk/standard/common/include/private;../../../../../../../libraries/abstractions/platform/include;../../../../../../../libraries/abstractions/platform/freertos/include;../../../../../../../libraries/abstractions/secure_sockets/include;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test;../../../../../../../libraries/freertos_plus/standard/pkcs11/include;../../../../../../../libraries/freertos_plus/aws/ota/test;../../../../../../../libraries/freertos_plus/standard/utils/include;../../../../../../../demos/dev_mode_key_provisioning/include;../../../../../../../libraries/c_sdk/aws/defender/include;../../../../../../../libraries/c_sdk/standard/mqtt/test/access;../../../../../../../libraries/c_sdk/standard/mqtt/include;../../../../../../../libraries/c_sdk/standard/mqtt/src;../../../../../../../libraries/c_sdk/standard/serializer/include;../../../../../../../libraries/c_sdk/aws/shadow/include;../../../../../../../libraries/c_sdk/aws/shadow/src;../../../../../../../libraries/c_sdk/standard/https/test/access;../../../../../../../libraries/c_sdk/standard/https/include;../../../../../../../libraries/c_sdk/standard/https/src;../../../../../../../libraries/freertos_plus/aws/greengrass/test;../../../../../../../libraries/freertos_plus/aws/greengrass/include;../../../../../../../libraries/freertos_plus/aws/greengrass/src;../../../../../../../libraries/freertos_plus/aws/ota/src;../../../../../../../libraries/freertos_plus/aws/ota/include;../../../../../../../libraries/3rdparty/mbedtls/include;../../../../../../../libraries/c_sdk/aws/defender/src/private;../../../../../../../libraries/3rdparty/jsmn;../../../../../../../libraries/3rdparty/pkcs11;../../../../../../../libraries/3rdparty/tinycbor;../../../../../../../libraries/3rdparty/tinycrypt/asn1;../../../../../../../libraries/3rdparty/tinycrypt/lib/include;../../../../../../../libraries/3rdparty/mbedtls/include/mbedtls;../../../../../../../libraries/abstractions/pkcs11/mbedtls;../../../../../../../libraries/3rdparty/unity/src;../../../../../../../libraries/3rdparty/unity/extras/fixture/src;../../../../../../../libraries/3rdparty/http_parser;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11;../../../../../../../libraries/abstractions/wifi/include;../../../../../../../vendors/microchip/harmony3/afr;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/ports/posix;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files;../../../../../../../vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code;../../../../../../../freertos_kernel/portable/MPLAB/PIC32MZ;../../../../../../../vendors/microchip/harmony3/afr/tcpip/src/common;../../../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3;../../../../../../../libraries/abstractions/wifi/test"/>
         <property key="false-conditionals" value="false"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
@@ -1737,126 +1715,6 @@
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
       </PICkit3PlatformTool>
-      <PKOBSKDEPlatformTool>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
-        <property key="firmware.download.all" value="false"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
-        <property key="memories.userotp" value="true"/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges" value=""/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges"
-                  value="${memories.eedata.default}"/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.usehighvoltageonmclr" value="false"/>
-        <property key="programoptions.uselvpprogramming" value="true"/>
-      </PKOBSKDEPlatformTool>
-      <pk4hybrid>
-        <property key="ADC" value="true"/>
-        <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="CAN1" value="true"/>
-        <property key="CANFD2" value="true"/>
-        <property key="CHANGE NOTICE A" value="true"/>
-        <property key="CHANGE NOTICE B" value="true"/>
-        <property key="CHANGE NOTICE C" value="true"/>
-        <property key="CHANGE NOTICE K" value="true"/>
-        <property key="CLOCK CONTROL LVDCON" value="true"/>
-        <property key="DMA" value="true"/>
-        <property key="ETHERNET CONTROLLER" value="true"/>
-        <property key="Freeze All Other Peripherals" value="true"/>
-        <property key="I2C 1" value="true"/>
-        <property key="I2C 2" value="true"/>
-        <property key="INPUT CAPTURE 1" value="true"/>
-        <property key="INPUT CAPTURE 2" value="true"/>
-        <property key="INPUT CAPTURE 3" value="true"/>
-        <property key="INPUT CAPTURE 4" value="true"/>
-        <property key="INTERRUPT CONTROL" value="true"/>
-        <property key="OUTPUT COMPARE 1" value="true"/>
-        <property key="OUTPUT COMPARE 2" value="true"/>
-        <property key="OUTPUT COMPARE 3" value="true"/>
-        <property key="OUTPUT COMPARE 4" value="true"/>
-        <property key="REAL TIME CLOCK" value="true"/>
-        <property key="REFERENCE CLOCK 1" value="true"/>
-        <property key="SPI/I2S 1" value="true"/>
-        <property key="SPI/I2S 2" value="true"/>
-        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="TIMER1" value="true"/>
-        <property key="TIMER2" value="true"/>
-        <property key="TIMER3" value="true"/>
-        <property key="TIMER4" value="true"/>
-        <property key="TIMER5" value="true"/>
-        <property key="TIMER6" value="true"/>
-        <property key="TIMER7" value="true"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
-        <property key="UART1" value="true"/>
-        <property key="UART2" value="true"/>
-        <property key="UART3" value="true"/>
-        <property key="communication.activationmode" value="nohv"/>
-        <property key="communication.interface" value=""/>
-        <property key="communication.interface.jtag" value="2wire"/>
-        <property key="communication.speed" value="${communication.speed.default}"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="memories.aux" value="false"/>
-        <property key="memories.bootflash" value="true"/>
-        <property key="memories.configurationmemory" value="true"/>
-        <property key="memories.configurationmemory2" value="true"/>
-        <property key="memories.dataflash" value="true"/>
-        <property key="memories.eeprom" value="true"/>
-        <property key="memories.exclude.configurationmemory" value="true"/>
-        <property key="memories.flashdata" value="true"/>
-        <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
-        <property key="memories.programmemory" value="true"/>
-        <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
-        <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoImageName" value="aws_tests_ptg"/>
-        <property key="programoptions.donoteraseauxmem" value="false"/>
-        <property key="programoptions.eraseb4program" value="true"/>
-        <property key="programoptions.ledbrightness" value="5"/>
-        <property key="programoptions.pgcconfig" value="pull down"/>
-        <property key="programoptions.pgcresistor.value" value="4.7"/>
-        <property key="programoptions.pgdconfig" value="pull down"/>
-        <property key="programoptions.pgdresistor.value" value="4.7"/>
-        <property key="programoptions.pgmentry.voltage" value="low"/>
-        <property key="programoptions.pgmspeed" value="Med"/>
-        <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
-        <property key="programoptions.preserveeeprom" value="false"/>
-        <property key="programoptions.preserveeeprom.ranges" value=""/>
-        <property key="programoptions.preserveprogram.ranges" value=""/>
-        <property key="programoptions.preserveprogramrange" value="false"/>
-        <property key="programoptions.preserveuserid" value="false"/>
-        <property key="programoptions.programcalmem" value="false"/>
-        <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="programoptionsedbg.eraseb4program" value="true"/>
-        <property key="ptgProgramImage" value="true"/>
-        <property key="ptgSendImage" value="true"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
-        <property key="voltagevalue" value="3.25"/>
-      </pk4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>

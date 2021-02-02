@@ -66,6 +66,7 @@ void UART2_RX_InterruptHandler( void );
 void UART2_TX_InterruptHandler( void );
 void I2C2_BUS_InterruptHandler( void );
 void I2C2_MASTER_InterruptHandler( void );
+void WDRV_PIC32MZW_TasksRFSMCISR( void );
 void WDRV_PIC32MZW_TasksRFMACISR( void );
 void WDRV_PIC32MZW_TasksRFTimer0ISR( void );
 void DRV_BA414E_InterruptHandler( void );
@@ -74,62 +75,62 @@ void DRV_BA414E_ErrorInterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __ISR(_CORE_TIMER_VECTOR, ipl1AUTO) CORE_TIMER_Handler (void)
+void CORE_TIMER_Handler (void)
 {
     CORE_TIMER_InterruptHandler();
 }
 
-void __ISR(_FLASH_CONTROL_VECTOR, ipl1AUTO) FLASH_CONTROL_Handler (void)
+void FLASH_CONTROL_Handler (void)
 {
     NVM_InterruptHandler();
 }
 
-void __ISR(_UART2_FAULT_VECTOR, ipl1AUTO) UART2_FAULT_Handler (void)
+void UART2_FAULT_Handler (void)
 {
     UART2_FAULT_InterruptHandler();
 }
 
-void __ISR(_UART2_RX_VECTOR, ipl1AUTO) UART2_RX_Handler (void)
+void UART2_RX_Handler (void)
 {
     UART2_RX_InterruptHandler();
 }
 
-void __ISR(_UART2_TX_VECTOR, ipl1AUTO) UART2_TX_Handler (void)
+void UART2_TX_Handler (void)
 {
     UART2_TX_InterruptHandler();
 }
 
-void __ISR(_I2C2_BUS_VECTOR, ipl1AUTO) I2C2_BUS_Handler (void)
+void I2C2_BUS_Handler (void)
 {
     I2C2_BUS_InterruptHandler();
 }
 
-void __ISR(_I2C2_MASTER_VECTOR, ipl1AUTO) I2C2_MASTER_Handler (void)
+void I2C2_MASTER_Handler (void)
 {
     I2C2_MASTER_InterruptHandler();
 }
 
-void __ISR(_RFSMC_VECTOR, ipl1AUTO) RFSMC_Handler (void)
+void RFSMC_Handler (void)
 {
     WDRV_PIC32MZW_TasksRFSMCISR();
 }
 
-void __ISR(_RFMAC_VECTOR, ipl1AUTO) RFMAC_Handler (void)
+void RFMAC_Handler (void)
 {
     WDRV_PIC32MZW_TasksRFMACISR();
 }
 
-void __ISR(_RFTM0_VECTOR, ipl1AUTO) RFTM0_Handler (void)
+void RFTM0_Handler (void)
 {
     WDRV_PIC32MZW_TasksRFTimer0ISR();
 }
 
-void __ISR(_CRYPTO1_VECTOR, ipl1AUTO) CRYPTO1_Handler (void)
+void CRYPTO1_Handler (void)
 {
     DRV_BA414E_InterruptHandler();
 }
 
-void __ISR(_CRYPTO1_FAULT_VECTOR, ipl1AUTO) CRYPTO1_FAULT_Handler (void)
+void CRYPTO1_FAULT_Handler (void)
 {
     DRV_BA414E_ErrorInterruptHandler();
 }

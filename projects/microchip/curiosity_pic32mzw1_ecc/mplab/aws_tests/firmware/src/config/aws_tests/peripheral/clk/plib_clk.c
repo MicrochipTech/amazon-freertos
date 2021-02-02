@@ -145,6 +145,10 @@ void CLK_Initialize( void )
 
     while( OSCCONbits.OSWEN );        /* wait for indication of successful clock change before proceeding */
 
+    /* Peripheral Bus 1 is by default enabled, set its divisor */
+    /* PBDIV = 4 */
+    PB1DIVbits.PBDIV = 3;
+
     /* Peripheral Bus 2 is by default enabled, set its divisor */
     /* PBDIV = 4 */
     PB2DIVbits.PBDIV = 3;
@@ -159,14 +163,9 @@ void CLK_Initialize( void )
     /* Peripheral Module Disable Configuration */
     CFGCON0bits.PMDLOCK = 0;
 
-    //PMD1 = 0x21018981;
-   // PMD2 = 0x7e0f0f;
-    //PMD3 = 0x19031314;
-    
-    PMD1 = 0x20818981;
+    PMD1 = 0x21018981;
     PMD2 = 0x7e0f0f;
-    //PMD3 = 0x19030310;
-    PMD3 = 0x19000310;
+    PMD3 = 0x19010314;
 
     CFGCON0bits.PMDLOCK = 1;
 

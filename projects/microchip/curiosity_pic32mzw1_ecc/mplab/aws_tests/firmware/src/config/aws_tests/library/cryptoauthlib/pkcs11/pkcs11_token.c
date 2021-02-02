@@ -522,13 +522,13 @@ CK_RV pkcs11_token_random(CK_SESSION_HANDLE hSession, CK_BYTE_PTR pRandomData, C
     ATCA_STATUS status;
     uint8_t buf[32];
     CK_RV rv;
-    
+
     rv = pkcs11_init_check(&lib_ctx, FALSE);
     if (rv)
     {
         return rv;
     }
-    
+
     if (!pRandomData || !ulRandomLen)
     {
         return CKR_ARGUMENTS_BAD;
@@ -545,12 +545,14 @@ CK_RV pkcs11_token_random(CK_SESSION_HANDLE hSession, CK_BYTE_PTR pRandomData, C
         (void)pkcs11_lock_context(lib_ctx);
 
         status = atcab_random(buf);
+
         (void)pkcs11_unlock_context(lib_ctx);
 
         if (status)
         {
             return CKR_DEVICE_ERROR;
         }
+
         if (32 < ulRandomLen)
         {
             memcpy(pRandomData, buf, 32);
@@ -564,6 +566,7 @@ CK_RV pkcs11_token_random(CK_SESSION_HANDLE hSession, CK_BYTE_PTR pRandomData, C
         }
     }
     while (ulRandomLen);
+
     return CKR_OK;
 }
 

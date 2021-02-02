@@ -11,7 +11,6 @@
 #endif
 
 /** Include Device Support Options */
-#define ATCA_ATECC608A_SUPPORT
 #define ATCA_ATECC608_SUPPORT
 
 
@@ -69,8 +68,9 @@ typedef struct atca_plib_api
     atca_i2c_plib_transfer_setup    transfer_setup;
 } atca_plib_i2c_api_t;
 
-extern atca_plib_i2c_api_t i2c2_plib_api;
+extern atca_plib_i2c_api_t i2c2_plib_i2c_api;
 
+/** Define certificate templates to be supported. */
 
 
 

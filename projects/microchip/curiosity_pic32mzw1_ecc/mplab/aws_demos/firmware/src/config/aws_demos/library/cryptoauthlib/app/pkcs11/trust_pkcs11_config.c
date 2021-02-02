@@ -105,8 +105,6 @@ CK_RV pkcs11_trust_load_objects(pkcs11_slot_ctx_ptr pSlot)
     pkcs11_object_ptr pObject;
     CK_RV rv = CKR_OK;
     CK_ATTRIBUTE xLabel;
-    
-    pkcs11_config_interface(pSlot);
 
     if (CKR_OK == rv)
     {
@@ -172,14 +170,13 @@ CK_RV pkcs11_config_cert(pkcs11_lib_ctx_ptr pLibCtx, pkcs11_slot_ctx_ptr pSlot, 
 
 CK_RV pkcs11_config_key(pkcs11_lib_ctx_ptr pLibCtx, pkcs11_slot_ctx_ptr pSlot, pkcs11_object_ptr pObject, CK_ATTRIBUTE_PTR pLabel)
 {
-    ///return pkcs11_trust_config_key(pLibCtx, pSlot, pObject, pLabel);
+    return pkcs11_trust_config_key(pLibCtx, pSlot, pObject, pLabel);
 }
 
 CK_RV pkcs11_config_load_objects(pkcs11_slot_ctx_ptr pSlot)
 {
     return pkcs11_trust_load_objects(pSlot);
 }
-
 #endif
 #endif
 

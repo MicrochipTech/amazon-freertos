@@ -43,7 +43,6 @@
 #define PKCS11_DEBUG_ENABLE             0
 #endif
 
-#define PKCS11_LABEL_IS_SERNUM          1
 
 /** Use a compiled configuration rather than loading from a filestore */
 #ifndef PKCS11_USE_STATIC_CONFIG

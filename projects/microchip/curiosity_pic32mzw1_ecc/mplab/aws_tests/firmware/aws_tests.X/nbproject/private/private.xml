@@ -2,6 +2,9 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/h3_official_github/amazon-freertos/projects/microchip/curiosity_pic32mzw1_ecc/mplab/aws_tests/firmware/src/config/aws_tests/library/cryptoauthlib/app/pkcs11/trust_pkcs11_config.c</file>
+            <file>file:/C:/h3_official_github/amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3/NetworkInterface_wifi.c</file>
+        </group>
     </open-files>
 </project-private>

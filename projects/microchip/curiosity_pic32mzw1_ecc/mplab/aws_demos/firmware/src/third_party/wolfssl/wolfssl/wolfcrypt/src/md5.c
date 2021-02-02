@@ -366,7 +366,7 @@ int wc_Md5Update(wc_Md5* md5, const byte* data, word32 len)
 
     /* process any remainder from previous operation */
     if (md5->buffLen > 0) {
-        ///blocksLen = min(len, WC_MD5_BLOCK_SIZE - md5->buffLen);
+        blocksLen = min(len, WC_MD5_BLOCK_SIZE - md5->buffLen);
         XMEMCPY(&local[md5->buffLen], data, blocksLen);
 
         md5->buffLen += blocksLen;

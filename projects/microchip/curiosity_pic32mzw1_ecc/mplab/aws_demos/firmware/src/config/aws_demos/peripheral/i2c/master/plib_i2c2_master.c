@@ -62,14 +62,13 @@ static I2C_OBJ i2c2Obj;
 
 void I2C2_Initialize(void)
 {
-    //printf("[%s] log1\r\n", __func__);
     /* Disable the I2C Master interrupt */
     IEC1CLR = _IEC1_I2C2MIE_MASK;
 
     /* Disable the I2C Bus collision interrupt */
     IEC1CLR = _IEC1_I2C2BIE_MASK;
 
-    I2C2BRG = 495;
+    I2C2BRG = 24995;
 
     I2C2CONCLR = _I2C2CON_SIDL_MASK;
     I2C2CONCLR = _I2C2CON_DISSLW_MASK;
@@ -337,7 +336,6 @@ bool I2C2_IsBusy(void)
 
 bool I2C2_Read(uint16_t address, uint8_t* rdata, size_t rlength)
 {
-    //printf("[%s] log1\r\n", __func__);
     /* State machine must be idle and I2C module should not have detected a start bit on the bus */
     if((i2c2Obj.state != I2C_STATE_IDLE) || (I2C2STAT & _I2C2STAT_S_MASK))
     {
@@ -365,7 +363,6 @@ bool I2C2_Read(uint16_t address, uint8_t* rdata, size_t rlength)
 
 bool I2C2_Write(uint16_t address, uint8_t* wdata, size_t wlength)
 {
-    //printf("[%s] log1\r\n", __func__);
     /* State machine must be idle and I2C module should not have detected a start bit on the bus */
     if((i2c2Obj.state != I2C_STATE_IDLE) || (I2C2STAT & _I2C2STAT_S_MASK))
     {
@@ -393,7 +390,6 @@ bool I2C2_Write(uint16_t address, uint8_t* wdata, size_t wlength)
 
 bool I2C2_WriteRead(uint16_t address, uint8_t* wdata, size_t wlength, uint8_t* rdata, size_t rlength)
 {
-    //printf("[%s] log1\r\n", __func__);
     /* State machine must be idle and I2C module should not have detected a start bit on the bus */
     if((i2c2Obj.state != I2C_STATE_IDLE) || (I2C2STAT & _I2C2STAT_S_MASK))
     {
@@ -430,7 +426,6 @@ I2C_ERROR I2C2_ErrorGet(void)
 
 bool I2C2_TransferSetup(I2C_TRANSFER_SETUP* setup, uint32_t srcClkFreq )
 {
-    //printf("[%s] log1\r\n", __func__);
     uint32_t baudValue;
     uint32_t i2cClkSpeed;
 
@@ -478,7 +473,6 @@ bool I2C2_TransferSetup(I2C_TRANSFER_SETUP* setup, uint32_t srcClkFreq )
 
 void I2C2_BUS_InterruptHandler(void)
 {
-    //printf("[%s] log1\r\n", __func__);
     /* Clear the bus collision error status bit */
     I2C2STATCLR = _I2C2STAT_BCL_MASK;
 
@@ -497,6 +491,5 @@ void I2C2_BUS_InterruptHandler(void)
 
 void I2C2_MASTER_InterruptHandler(void)
 {
-    //printf("[%s] log1\r\n", __func__);
     I2C2_TransferSM();
 }

@@ -92,7 +92,6 @@ typedef struct
 
 } APP_DATA;
 
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Routines
@@ -173,15 +172,13 @@ void APP_Initialize ( void );
 
 void APP_Tasks( void );
 
-
-
-#endif /* _APP_H */
-
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus
 }
 #endif
 //DOM-IGNORE-END
+
+#endif /* _APP_H */
 
 /*******************************************************************************
  End of File
