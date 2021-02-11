@@ -62,7 +62,11 @@ SOFTWARE
 //      - 4 bytes pointer to the MAC packet (pic32_NetworkInterface.c)
 //      - 2 bytes offset from the MAC packet (Harmony MAC driver: segLoadOffset)
 // NOTE: the ipBUFFER_PADDING should be set to 10 to match the TCPIP_MAC_FRAME_OFFSET value!
+#ifdef PIC32_USE_RIO2_WIFI
 #define PIC32C_BUFFER_PKT_PTR_OSSET    38
+#else
+#define PIC32C_BUFFER_PKT_PTR_OSSET    4
+#endif
 
 
 

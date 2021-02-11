@@ -51,8 +51,8 @@
 #include "system/debug/sys_debug.h"
 #include "system/command/sys_command.h"
 
-//#include "driver/ethmac/drv_ethmac.h"
-//#include "driver/miim/drv_miim.h"
+#include "driver/ethmac/drv_ethmac.h"
+#include "driver/miim/drv_miim.h"
 
 #include "tcpip/tcpip.h"
 #include "tcpip/src/tcpip_private.h"
@@ -61,7 +61,7 @@
 #ifdef PIC32_USE_ETHERNET
 
 #define TCPIP_NETWORK_DEFAULT_INTERFACE_NAME_IDX0	"ETHMAC"
-#define TCPIP_IF_ETHMAC
+//#define TCPIP_IF_ETHMAC
 
 #define TCPIP_NETWORK_DEFAULT_HOST_NAME_IDX0				"MCHPBOARD_E"
 #define TCPIP_NETWORK_DEFAULT_MAC_ADDR_IDX0				0
@@ -77,7 +77,7 @@
 													TCPIP_NETWORK_CONFIG_DNS_CLIENT_ON |\
 													TCPIP_NETWORK_CONFIG_IP_STATIC
 													
-#define TCPIP_NETWORK_DEFAULT_MAC_DRIVER_IDX0			WDRV_PIC32MZW1_MACObject
+#define TCPIP_NETWORK_DEFAULT_MAC_DRIVER_IDX0			DRV_ETHMAC_PIC32MACObject
 
 
 
@@ -125,12 +125,11 @@
 #define TCPIP_STACK_INTERFACE_CHANGE_SIGNALING   false
 #define TCPIP_STACK_CONFIGURATION_SAVE_RESTORE   true
 
-#if 0
 const DRV_MIIM_INIT drvMiimInitData =
 {
     .ethphyId = DRV_MIIM_ETH_MODULE_ID,
 };
-#endif
+
 
 
 const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] =
@@ -151,7 +150,6 @@ const TCPIP_NETWORK_CONFIG __attribute__((unused))  TCPIP_HOSTS_CONFIGURATION[] 
     },
 };
 
-#if 0
 const DRV_ETHPHY_INIT tcpipPhyInitData =
 {    
     .ethphyId               = TCPIP_INTMAC_MODULE_ID,
@@ -164,9 +162,8 @@ const DRV_ETHPHY_INIT tcpipPhyInitData =
     .miimIndex              = DRV_MIIM_DRIVER_INDEX,
 
 };
-#endif
-#if 0
-/*** GMAC MAC Initialization Data ***/
+
+/*** ETH MAC Initialization Data ***/
 const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
 { 
     .nTxDescriptors         = TCPIP_EMAC_TX_DESCRIPTORS,
@@ -182,15 +179,13 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
     .pPhyBase               = &DRV_ETHPHY_OBJECT_BASE_Default,
     .pPhyInit               = &tcpipPhyInitData,
 };
-#endif
-
 
 
     /* local definitions and data */
 
     /* debug messages */
     #if ( PIC32_MAC_DEBUG_MESSAGES != 0 )
-        #define PIC32_MAC_DbgPrint   printf
+        #define PIC32_MAC_DbgPrint   vLoggingPrintf
     #else
         #define PIC32_MAC_DbgPrint       
     #endif /* (PIC32_MAC_DEBUG_MESSAGES != 0) */
@@ -354,6 +349,7 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
     /* FreeRTOS implementation functions */
     BaseType_t xNetworkInterfaceInitialise( void )
     {
+        FreeRTOS_debug_printf( ( "[%s] In\n",  __func__ ) );
     BaseType_t xResult;
 
         if( xMacInitStatus == eMACInit )
@@ -378,7 +374,6 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
         {
             xResult = pdFAIL;
         }
-
     	PIC32_MAC_DbgPrint( "xNetworkInterfaceInitialise: %d %d\r\n", ( int ) xMacInitStatus, ( int ) xResult );
 
         return xResult;
@@ -392,24 +387,20 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
     {
         TCPIP_MAC_RES macRes;
         TCPIP_MAC_PACKET * pTxPkt;
-
         BaseType_t retRes = pdFALSE;
-
-
+        
         if( ( pxDescriptor != 0 ) && ( pxDescriptor->pucEthernetBuffer != 0 ) && ( pxDescriptor->xDataLength != 0 ) )
         {
             TCPIP_MAC_PACKET ** ppkt = ( TCPIP_MAC_PACKET ** ) ( pxDescriptor->pucEthernetBuffer - PIC32C_BUFFER_PKT_PTR_OSSET );
             configASSERT( ( ( uint32_t ) ppkt & ( sizeof( uint32_t ) - 1 ) ) == 0 );
             pTxPkt = *ppkt;
             configASSERT( pTxPkt != 0 );
-
             /* prepare the packet for transmission */
             /* set the correct data length: */
             configASSERT( pTxPkt->pDSeg->segSize >= pTxPkt->pDSeg->segLen );
             pTxPkt->pDSeg->segLen = pxDescriptor->xDataLength;
             pTxPkt->next = 0; /* unlink it */
             macRes = ( macObject->TCPIP_MAC_PacketTx )( macCliHandle, pTxPkt );
-
             if( macRes >= 0 )
             {
                 retRes = pdTRUE;
@@ -421,7 +412,6 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
                 PIC32_MAC_DbgPrint("Transmission failed %d\r\n",macRes);
             }
             
-
             /* else same error occurred; this normally should not happen! But the buffer is left in there so it shold be freed! */
 
             /* The buffer has been sent so can be released. */
@@ -439,12 +429,12 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
     /* */
 
     /*-----------------------------------------------------------*/
-#if 0
+
     const void * const PIC32_GetMacConfigData( void )
     {
             return &tcpipMACPIC32INTInitData;
     }
-#endif
+
     /************************************* Section: worker code ************************************************** */
     /* */
   
@@ -497,11 +487,11 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
             {
                 .moduleInit = { 0},
                 .macControl = &macCtrl,
-                .moduleData = NULL,
+                .moduleData = PIC32_GetMacConfigData(),
             };
             
 
-            macObjHandle = ( macObject->TCPIP_MAC_Initialize )( TCPIP_MODULE_MAC_PIC32MZW1, &macInit.moduleInit );
+            macObjHandle = ( macObject->TCPIP_MAC_Initialize )( TCPIP_MODULE_MAC_PIC32INT, &macInit.moduleInit );
 
             if( macObjHandle == SYS_MODULE_OBJ_INVALID )
             {
@@ -511,7 +501,7 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
             }
 
             /* open the MAC */
-            macCliHandle = ( macObject->TCPIP_MAC_Open )( TCPIP_MODULE_MAC_PIC32MZW1, DRV_IO_INTENT_READWRITE );
+            macCliHandle = ( macObject->TCPIP_MAC_Open )( TCPIP_MODULE_MAC_PIC32INT, DRV_IO_INTENT_READWRITE );
 
             if( macCliHandle == DRV_HANDLE_INVALID )
             {
@@ -583,7 +573,7 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
         }
         else
         {
-            printf( "MAC Init failed: %d macObjStatus = %d!\r\n", netUpFail,macObjStatus );
+            FreeRTOS_debug_printf( ( "MAC Init failed: %d macObjStatus = %d!\r\n",  netUpFail,macObjStatus ) );
             StartInitCleanup();
             return false;
         }
@@ -643,10 +633,11 @@ const TCPIP_MODULE_MAC_PIC32INT_CONFIG tcpipMACPIC32INTInitData =
         pMacCtrl->eventF = MAC_EventFunction;
         pMacCtrl->eventParam = 0;
 
-        pMacCtrl->moduleId = TCPIP_MODULE_MAC_PIC32MZW1;
+        pMacCtrl->moduleId = TCPIP_MODULE_MAC_PIC32INT;
         pMacCtrl->netIx = 0;
         pMacCtrl->macAction = TCPIP_MAC_ACTION_INIT;
         pMacCtrl->powerMode = TCPIP_MAC_POWER_FULL;
+        pMacCtrl->segLoadOffset = TCPIP_PKT_SegLoadOffset();
 
         macAdd.v[ 0 ] = configMAC_ADDR0;
         macAdd.v[ 1 ] = configMAC_ADDR1;

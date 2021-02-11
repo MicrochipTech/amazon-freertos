@@ -271,7 +271,11 @@ extern uint32_t ulRand();
  * This has to do with the contents of the IP-packets: all 32-bit fields are
  * 32-bit-aligned, plus 16-bit(!) */
 #define ipconfigPACKET_FILLER_SIZE                     2
+#ifdef PIC32_USE_RIO2_WIFI
 #define ipconfigBUFFER_PADDING                         42
+#else
+#define ipconfigBUFFER_PADDING                         8
+#endif
 
 /* Define the size of the pool of TCP window descriptors.  On the average, each
  * TCP socket will use up to 2 x 6 descriptors, meaning that it can have 2 x 6

@@ -194,15 +194,16 @@ static SemaphoreHandle_t xNetworkBufferSemaphore = NULL;
                                                 TCPIP_MAC_PACKET_FLAGS flags )
     {
         TCPIP_MAC_PACKET * pPkt;
-
+#ifdef PIC32_USE_RIO2_WIFI
         /* allocate standard packet */
         pPkt = TCPIP_PKT_PacketAlloc( pktLen, segLoadLen, flags );
          if( pPkt != 0 )
         {
             pPkt->ackFunc = PIC32_MacPacketAcknowledge;
          }
-        
-
+#else
+		PIC32_PktAlloc( pktLen, segLoadLen, 0, &pPkt );        
+#endif
         return pPkt;
     }
     
@@ -230,13 +231,23 @@ static SemaphoreHandle_t xNetworkBufferSemaphore = NULL;
         pxBufferDescriptor->xDataLength = pktLength;
 
         /* make sure this is a properly allocated packet */
+#ifdef PIC32_USE_RIO2_WIFI
         TCPIP_MAC_PACKET ** ppkt = ( TCPIP_MAC_PACKET ** ) ( pPktBuff - pRxPkt->pDSeg->segLoadOffset );
-        configASSERT( ( ( uint32_t ) ppkt & ( sizeof( uint32_t ) - 1 ) ) == 0 );
+#else
+		TCPIP_MAC_PACKET ** ppkt = ( TCPIP_MAC_PACKET ** ) ( pPktBuff - PIC32C_BUFFER_PKT_PTR_OSSET );
+#endif
+		configASSERT( ( ( uint32_t ) ppkt & ( sizeof( uint32_t ) - 1 ) ) == 0 );
 
         if( *ppkt != pRxPkt )
         {
             configASSERT( false );
         }
+#ifndef PIC32_USE_RIO2_WIFI
+        /* set the proper descriptor info */
+        NetworkBufferDescriptor_t ** ppDcpt = ( NetworkBufferDescriptor_t ** ) ( pPktBuff - ipBUFFER_PADDING );
+        configASSERT( ( ( uint32_t ) ppDcpt & ( sizeof( uint32_t ) - 1 ) ) == 0 );
+        *ppDcpt = pxBufferDescriptor;
+#endif
     }
 
     /* debug functionality */
@@ -401,15 +412,8 @@ void vReleaseNetworkBuffer( uint8_t * pucEthernetBuffer )
     /* There is space before the Ethernet buffer in which a pointer to the
      * network buffer that references this Ethernet buffer is stored.  Remove the
      * space before freeing the buffer. */
-
-#if defined(PIC32_USE_ETHERNET) || defined(PIC32_USE_RIO2_WIFI)
-       // NetworkBufferFree( pucEthernetBuffer );
-        if( pucEthernetBuffer != NULL )
-        {         
-            pucEthernetBuffer -= ipBUFFER_PADDING;
-            vPortFree( ( void * ) pucEthernetBuffer );
-
-        }
+    #ifdef PIC32_USE_ETHERNET
+        NetworkBufferFree( pucEthernetBuffer );
     #else
         if( pucEthernetBuffer != NULL )
         {
@@ -474,8 +478,8 @@ NetworkBufferDescriptor_t * pxGetNetworkBufferWithDescriptor( size_t xRequestedS
             /* Extra space is obtained so a pointer to the network buffer can
              * be stored at the beginning of the buffer. */
 
-            #if defined(PIC32_USE_ETHERNET) || defined(PIC32_USE_RIO2_WIFI)
-                pxReturn->pucEthernetBuffer = ( uint8_t * ) pvPortMalloc( xRequestedSizeBytes + ipBUFFER_PADDING );
+            #ifdef PIC32_USE_ETHERNET
+                pxReturn->pucEthernetBuffer = NetworkBufferAllocate( xRequestedSizeBytes - sizeof( TCPIP_MAC_ETHERNET_HEADER ) );
             #else
                 pxReturn->pucEthernetBuffer = ( uint8_t * ) pvPortMalloc( xRequestedSizeBytes + ipBUFFER_PADDING );
             #endif /* #ifdef PIC32_USE_ETHERNET */
@@ -495,9 +499,8 @@ NetworkBufferDescriptor_t * pxGetNetworkBufferWithDescriptor( size_t xRequestedS
                  * buffer storage area, then move the buffer pointer on past the
                  * stored pointer so the pointer value is not overwritten by the
                  * application when the buffer is used. */
-                #if defined(PIC32_USE_ETHERNET) || defined(PIC32_USE_RIO2_WIFI)
-                    *( ( NetworkBufferDescriptor_t ** ) ( pxReturn->pucEthernetBuffer ) ) = pxReturn;
-                    pxReturn->pucEthernetBuffer += ipBUFFER_PADDING;  
+                #ifdef PIC32_USE_ETHERNET
+                    *( ( NetworkBufferDescriptor_t ** ) ( pxReturn->pucEthernetBuffer - ipBUFFER_PADDING ) ) = pxReturn;
                 #else
                     *( ( NetworkBufferDescriptor_t ** ) ( pxReturn->pucEthernetBuffer ) ) = pxReturn;
                     pxReturn->pucEthernetBuffer += ipBUFFER_PADDING;

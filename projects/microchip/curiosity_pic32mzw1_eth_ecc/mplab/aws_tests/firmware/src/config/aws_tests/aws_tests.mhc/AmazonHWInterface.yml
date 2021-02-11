@@ -1,0 +1,1203 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: AmazonHWInterface}
+children:
+- type: Symbols
+  children:
+  - type: Setting
+    attributes: {id: AFR1_XC32_INCLUDE_DIRS1}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Setting
+    attributes: {id: AFR1_XC32_INCLUDE_DIRS3}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Setting
+    attributes: {id: AFR2_XC32_AS_PRE_PROC_DIRS3}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Setting
+    attributes: {id: AFR2_XC32_AS_PRE_PROC_DIRS4}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Setting
+    attributes: {id: AFR_XC32_INCLUDE_ASM1}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Setting
+    attributes: {id: AFR_XC32_INCLUDE_ASM3}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/FREERTOS_KERNEL/PORTABLE/MEMMANG/HEAP_4.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/portable/MemMang}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/FREERTOS_KERNEL/PORTABLE/MPLAB/PIC32MZ/ISR_SUPPORT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/portable/MPLAB/PIC32MZ}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/FREERTOS_KERNEL/PORTABLE/MPLAB/PIC32MZ/PORT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/portable/MPLAB/PIC32MZ}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/FREERTOS_KERNEL/PORTABLE/MPLAB/PIC32MZ/PORTMACRO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/portable/MPLAB/PIC32MZ}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/FREERTOS_KERNEL/PORTABLE/MPLAB/PIC32MZ/PORT_ASM.S}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/portable/MPLAB/PIC32MZ}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PKCS11/INCLUDE/IOT_PKCS11_PAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/pkcs11/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PKCS11/MBEDTLS/IOT_PKCS11_MBEDTLS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/pkcs11/mbedtls}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PKCS11/MBEDTLS/THREADING_ALT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/pkcs11/mbedtls}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/SECURE_SOCKETS/FREERTOS_PLUS_TCP/IOT_SECURE_SOCKETS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/secure_sockets/freertos_plus_tcp}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/WIFI/INCLUDE/IOT_WIFI.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/wifi/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/WIFI/TEST/IOT_TEST_WIFI.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/wifi/test}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOSIPCONFIGDEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_ARP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_DHCP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_DNS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_ERRNO_TCP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_IP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_IP_PRIVATE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_SOCKETS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_STREAM_BUFFER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_TCP_IP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_TCP_WIN.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/FREERTOS_UDP_IP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/IPTRACEMACRODEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/NETWORKBUFFERMANAGEMENT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/INCLUDE/NETWORKINTERFACE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/include}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_ARP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_DHCP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_DNS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_IP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_SOCKETS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_STREAM_BUFFER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_TCP_IP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_TCP_WIN.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/FREERTOS_UDP_IP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/PORTABLE/COMPILER/GCC/PACK_STRUCT_END.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/PORTABLE/COMPILER/GCC/PACK_STRUCT_START.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/PORTABLE/NETWORKINTERFACE/PIC32MZW1_H3/BUFFERALLOCATION_2.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/PORTABLE/NETWORKINTERFACE/PIC32MZW1_H3/NETWORKINTERFACE_ETH.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/PORTABLE/NETWORKINTERFACE/PIC32MZW1_H3/NETWORKINTERFACE_WIFI.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/pic32mzw1_h3}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/SOURCE/README.URL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp/source}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/FREERTOS_PLUS_TCP/UNCRUSTIFY.CFG}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/freertos_plus_tcp}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/APPLICATION_CODE/ATCA_CERT_CHAIN.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/APPLICATION_CODE/ATCA_CERT_CHAIN.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/application_code}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_DEMO_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_GGD_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_IOT_NETWORK_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_MQTT_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_OTA_AGENT_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_SECURE_SOCKETS_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_SHADOW_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_TEST_OTA_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_TEST_RUNNER_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_TEST_TCP_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_TEST_WIFI_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/AWS_WIFI_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/FREERTOSCONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/FREERTOSIPCONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/IOT_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/IOT_MQTT_AGENT_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/IOT_PKCS11_CONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/IOT_TEST_PKCS11_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/NETWORKCONFIG.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/AWS_TESTS/CONFIG_FILES/UNITY_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/aws_tests/config_files}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/PKCS11/IOT_PKCS11_PAL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/PKCS11/IOT_PKCS11_SECURE_ELEMENT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11}
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/PKCS11/PKCS11_NVM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/PKCS11/PKCS11_NVM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/pkcs11}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/POSIX/FREERTOS_POSIX_PORTABLE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/posix}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/BOARDS/CURIOSITY_PIC32MZW1/PORTS/WIFI/IOT_WIFI.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/boards/curiosity_pic32mzw1/ports/wifi}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/AFR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/SYSTEM/SYS_TIME_H2_ADAPTER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/system}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/SYSTEM/SYS_TIME_H2_ADAPTER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/system}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/SYSTEM_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/IPV4.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/IPV6.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/LLDP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/COMMON/HELPERS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src/common}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/COMMON/SYS_FS_WRAPPER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src/common}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/HASH_FNV.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/HASH_FNV.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/HELPERS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/LINK_LIST.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/LLDP_MANAGER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/OAHASH.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/OAHASH.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HEAP_ALLOC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HEAP_ALLOC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HEAP_EXTERNAL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HEAP_INTERNAL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HELPERS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HELPERS_PRIVATE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_HELPER_C32.S}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_MANAGER_CONTROL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_MODULE_MANAGER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_NOTIFY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_NOTIFY.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_PACKET.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_PACKET.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_PRIVATE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/SRC/TCPIP_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip/src}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_COMMON_PORTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_ETHERNET.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_HEAP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_HELPERS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_MAC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_MAC_OBJECT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: File
+    attributes: {id: AMAZON-FREERTOS/VENDORS/MICROCHIP/HARMONY3/AFR/TCPIP/TCPIP_MANAGER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/vendors/microchip/harmony3/afr/tcpip}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_FREERTOS_HEAP_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '180000'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_FREERTOS_LOGGING_MAX_MSG_LEN}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '512'}
+  - type: Boolean
+    attributes: {id: AWS_CLOUD_FREERTOS_REPLY_INCOMING_PINGS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: AWS_CLOUD_FREERTOS_SUPP_OUTGOING_PINGS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+  - type: Boolean
+    attributes: {id: AWS_CLOUD_FREERTOS_TCP_WIN}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_FREERTOS_TIMER_TASK_STACK_DEPTH}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1024'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_FREERTOS_USE_TIMER_QUEUE_LENGTH}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '5'}
+  - type: String
+    attributes: {id: AWS_CLOUD_MAC}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: AmazonHWInterface, value: ETHMAC}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_MQTT_MAX_BROKERS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '4'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_SHADOW_DEBUG_LOG}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_SHADOW_MAX_CALLBACK}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_SHADOW_MAX_CLIENTS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1'}
+  - type: Integer
+    attributes: {id: AWS_CLOUD_THREAD_STACK_SZ}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2048'}
+  - type: Boolean
+    attributes: {id: DT_HW_AWS_CLOUD_H3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: AmazonHWInterface, value: 'true'}
+  - type: Combo
+    attributes: {id: H3_AWS_CLOUD_CONF}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: Ethernet + ECC608}
+  - type: Boolean
+    attributes: {id: HW_AWS_CLOUD_H3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: AmazonHWInterface, value: 'true'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: AmazonHWInterface}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: AmazonDeviceTester}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: AmazonHWInterface}
+  - type: DirectDependency
+    attributes: {id: NETCONFIG_MAC_Dependency}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: drvPic32mEthmac}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: libdrvPic32mEthmac}
+- type: ElementPosition
+  attributes: {x: '1279', y: '143', id: AmazonHWInterface}

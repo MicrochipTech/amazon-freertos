@@ -1,0 +1,14 @@
+configName: aws_demos
+folderName: ''
+format_version: v1.0
+frameworkPath: ../../../../../..
+processor: PIC32MZ1025W104132
+projectName: ''
+settings:
+  PackageFilter: aerospace;aws_cloud;aws_cloud;aws_cloud;aws_cloud;azure-rtos-threadx;bootloader;bootloader_apps_ethernet;bootloader_apps_i2c;bootloader_apps_sdcard;bootloader_apps_uart;bootloader_apps_usb;bsp;bt;classb_sam_e5x_d5x;core;core_apps_pic32mz_ef;core_apps_pic32mz_w1;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;crypto_apps_large_hash;crypto_apps_speed_test;csp;csp_apps_pic32mz_ef;csp_apps_pic32mz_w1;csp_apps_sam_d21_da1;csp_apps_sam_g55;ethercat;gfx;gfx_apps;micrium_ucos3;motor_control;net;quick_docs;touch;touch_apps;usb;wireless;x2c;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\PIC32MZ-W_DFP\1.3.177\atdf\PIC32MZ1025W104132.atdf

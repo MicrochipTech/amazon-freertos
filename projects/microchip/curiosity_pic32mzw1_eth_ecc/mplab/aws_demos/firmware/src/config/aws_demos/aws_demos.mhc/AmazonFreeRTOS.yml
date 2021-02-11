@@ -1,0 +1,3774 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: AmazonFreeRTOS}
+children:
+- type: Symbols
+  children:
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEFENDER/AWS_IOT_DEMO_DEFENDER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/defender}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEMO_RUNNER/AWS_DEMO.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/demo_runner}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEMO_RUNNER/AWS_DEMO_NETWORK_ADDR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/demo_runner}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEMO_RUNNER/AWS_DEMO_VERSION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/demo_runner}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEMO_RUNNER/IOT_DEMO_FREERTOS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/demo_runner}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEMO_RUNNER/IOT_DEMO_RUNNER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/demo_runner}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEV_MODE_KEY_PROVISIONING/INCLUDE/AWS_DEV_MODE_KEY_PROVISIONING.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/dev_mode_key_provisioning/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/DEV_MODE_KEY_PROVISIONING/SRC/AWS_DEV_MODE_KEY_PROVISIONING.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/dev_mode_key_provisioning/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/GREENGRASS_CONNECTIVITY/AWS_GREENGRASS_DISCOVERY_DEMO.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/greengrass_connectivity}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_COMMON.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_COMMON.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_S3_DOWNLOAD_ASYNC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_S3_DOWNLOAD_SYNC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_S3_UPLOAD_ASYNC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/IOT_DEMO_HTTPS_S3_UPLOAD_SYNC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/HTTPS/PRESIGNED_URLS_GEN.PY}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/https}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_APPLICATION_VERSION.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_BLE_GATT_SERVER_DEMO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_CLIENTCREDENTIAL.H.FTL}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_CLIENTCREDENTIAL_KEYS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_DEMO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_IOT_DEMO_NETWORK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_OTA_CODESIGNER_CERTIFICATE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/AWS_WIFI_CONNECT_TASK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/IOT_BLE_NUMERICCOMPARISON.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/IOT_CONFIG_COMMON.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/IOT_DEMO_LOGGING.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/INCLUDE/IOT_DEMO_RUNNER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/MQTT/IOT_DEMO_MQTT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/NETWORK_MANAGER/AWS_IOT_DEMO_NETWORK.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/network_manager}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/NETWORK_MANAGER/AWS_IOT_NETWORK_MANAGER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/network_manager}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/NETWORK_MANAGER/IOT_NETWORK_MANAGER_PRIVATE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/network_manager}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/OTA/AWS_IOT_OTA_UPDATE_DEMO.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/ota}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/SHADOW/AWS_IOT_DEMO_SHADOW.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/shadow}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/TCP/AWS_TCP_ECHO_CLIENT_SINGLE_TASK.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/tcp}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/DEMOS/TCP/AWS_TCP_ECHO_CLIENT_SINGLE_TASKS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/demos/tcp}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/CROUTINE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/EVENT_GROUPS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/ATOMIC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/CROUTINE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/DEPRECATED_DEFINITIONS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/EVENT_GROUPS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/FREERTOS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/LIST.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/MESSAGE_BUFFER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/MPU_PROTOTYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/MPU_WRAPPERS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/PORTABLE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/PROJDEFS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/QUEUE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/SEMPHR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/STACKMACROS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/STACK_MACROS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/STDINT.README}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/STREAM_BUFFER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/TASK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/INCLUDE/TIMERS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/LIST.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/QUEUE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/STREAM_BUFFER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/TASKS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/FREERTOS_KERNEL/TIMERS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/freertos_kernel}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/.MAILMAP}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/.TRAVIS.YML}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/AUTHORS}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/HTTP_PARSER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/HTTP_PARSER.GYP}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/HTTP_PARSER/HTTP_PARSER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/http_parser}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/JSMN/JSMN.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/jsmn}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/JSMN/JSMN.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/jsmn}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/AES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/AESNI.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ARC4.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ASN1.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ASN1WRITE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/BASE64.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/BIGNUM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/BLOWFISH.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/BN_MUL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CAMELLIA.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CCM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CERTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CHECK_CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CIPHER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CIPHER_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CMAC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/COMPAT-1.3.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CONFIG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/CTR_DRBG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/DEBUG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/DES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/DHM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ECDH.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ECDSA.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ECJPAKE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ECP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ECP_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ENTROPY.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ENTROPY_POLL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/ERROR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/GCM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/HAVEGE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/HMAC_DRBG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MD.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MD2.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MD4.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MD5.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MD_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/MEMORY_BUFFER_ALLOC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/NET.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/NET_SOCKETS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/OID.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PADLOCK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PEM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PKCS12.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PKCS5.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PK_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PLATFORM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PLATFORM_TIME.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/PLATFORM_UTIL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/RIPEMD160.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/RSA.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/RSA_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SHA1.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SHA256.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SHA512.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL_CACHE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL_CIPHERSUITES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL_COOKIE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/SSL_TICKET.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/THREADING.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/TIMING.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/VERSION.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/X509.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/X509_CRL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/X509_CRT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/X509_CSR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/INCLUDE/MBEDTLS/XTEA.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/include/mbedtls}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/AES.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/AESNI.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ARC4.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ASN1PARSE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ASN1WRITE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/BASE64.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/BIGNUM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/BLOWFISH.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CAMELLIA.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CCM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CERTS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CIPHER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CIPHER_WRAP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CMAC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/CTR_DRBG.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/DEBUG.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/DES.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/DHM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ECDH.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ECDSA.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ECJPAKE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ECP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ECP_CURVES.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ENTROPY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ENTROPY_POLL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/ERROR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/GCM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/HAVEGE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/HMAC_DRBG.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MD.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MD2.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MD4.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MD5.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MD_WRAP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/MEMORY_BUFFER_ALLOC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/NET_SOCKETS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/OID.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PADLOCK.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PEM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PK.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PKCS12.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PKCS5.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PKPARSE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PKWRITE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PK_WRAP.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PLATFORM.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/PLATFORM_UTIL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/RIPEMD160.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/RSA.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/RSA_INTERNAL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SHA1.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SHA256.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SHA512.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_CACHE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_CIPHERSUITES.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_CLI.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_COOKIE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_SRV.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_TICKET.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/SSL_TLS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/THREADING.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/TIMING.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/VERSION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/VERSION_FEATURES.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509WRITE_CRT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509WRITE_CSR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509_CREATE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509_CRL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509_CRT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/X509_CSR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/LIBRARY/XTEA.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/library}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/MBEDTLS/UTILS/MBEDTLS_UTILS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/mbedtls/utils}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/PKCS11/PKCS11.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/pkcs11}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/PKCS11/PKCS11F.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/pkcs11}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/PKCS11/PKCS11T.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/pkcs11}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBOR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORENCODER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORENCODER_CLOSE_CONTAINER_CHECKED.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORERRORSTRINGS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORINTERNAL_P.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORPARSER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORPARSER_DUP_STRING.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORPRETTY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORPRETTY_STDIO.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/CBORVALIDATION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/COMPILERSUPPORT_P.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/TINYCBOR-VERSION.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCBOR/UTF8_P.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/ASN1/ASN1.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/asn1}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/AUTHORS}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/CONFIG.MK}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/AES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CBC_MODE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CCM_MODE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CMAC_MODE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CONSTANTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CTR_MODE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/CTR_PRNG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/ECC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/ECC_DH.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/ECC_DSA.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/ECC_PLATFORM_SPECIFIC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/HMAC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/HMAC_PRNG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/SHA256.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/INCLUDE/TINYCRYPT/UTILS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/include/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/AES_DECRYPT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/AES_ENCRYPT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/CBC_MODE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/CCM_MODE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/CMAC_MODE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/CTR_MODE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/CTR_PRNG.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/ECC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/ECC_DH.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/ECC_DSA.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/ECC_PLATFORM_SPECIFIC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/HMAC.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/HMAC_PRNG.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/SHA256.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/LIB/SOURCE/UTILS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt/lib/source}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/README}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/3RDPARTY/TINYCRYPT/VERSION}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/3rdparty/tinycrypt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_AVSRC_PROFILE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_GATT_CLIENT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_GATT_SERVER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_GATT_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_MANAGER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_MANAGER_ADAPTER_BLE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_MANAGER_ADAPTER_CLASSIC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/BLE_HAL/INCLUDE/BT_HAL_MANAGER_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/ble_hal/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_ADC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_BATTERY.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_EFUSE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_FLASH.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_GPIO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_HW.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_I2C.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_I2S.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_PERFCOUNTER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_POWER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_PWM.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_RESET.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_RTC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_SPI.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_TIMER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_TSENSOR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_UART.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_USB_DEVICE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/COMMON_IO/INCLUDE/IOT_WATCHDOG.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/common_io/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PKCS11/INCLUDE/IOT_PKCS11_PAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/pkcs11/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/INCLUDE/PLATFORM/IOT_NETWORK_BLE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/INCLUDE/PLATFORM/IOT_NETWORK_FREERTOS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/INCLUDE/PLATFORM/IOT_PLATFORM_TYPES_FREERTOS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/IOT_CLOCK_FREERTOS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/IOT_METRICS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/IOT_NETWORK_FREERTOS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/FREERTOS/IOT_THREADS_FREERTOS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/freertos}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/INCLUDE/PLATFORM/IOT_CLOCK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/INCLUDE/PLATFORM/IOT_METRICS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/INCLUDE/PLATFORM/IOT_NETWORK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/INCLUDE/PLATFORM/IOT_THREADS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/include/platform}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/PLATFORM/INCLUDE/TYPES/IOT_PLATFORM_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/platform/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/ERRNO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/FCNTL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/MQUEUE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/PTHREAD.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/SCHED.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/SEMAPHORE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/SIGNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/SYS/TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX/sys}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/TIME.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/UNISTD.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/POSIX/INCLUDE/FREERTOS_POSIX/UTILS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/posix/include/FreeRTOS_POSIX}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/SECURE_SOCKETS/INCLUDE/IOT_SECURE_SOCKETS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/secure_sockets/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/SECURE_SOCKETS/INCLUDE/IOT_SECURE_SOCKETS_CONFIG_DEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/secure_sockets/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/ABSTRACTIONS/SECURE_SOCKETS/INCLUDE/IOT_SECURE_SOCKETS_WRAPPER_METRICS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/abstractions/secure_sockets/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/INCLUDE/AWS_DEFENDER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/INCLUDE/AWS_IOT_DEFENDER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/SRC/AWS_IOT_DEFENDER_API.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/SRC/AWS_IOT_DEFENDER_COLLECTOR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/SRC/AWS_IOT_DEFENDER_MQTT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/SRC/AWS_IOT_DEFENDER_V1.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/DEFENDER/SRC/PRIVATE/AWS_IOT_DEFENDER_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/defender/src/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/INCLUDE/AWS_IOT_SHADOW.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/INCLUDE/AWS_SHADOW.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/INCLUDE/TYPES/AWS_IOT_SHADOW_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_IOT_SHADOW_API.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_IOT_SHADOW_OPERATION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_IOT_SHADOW_PARSER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_IOT_SHADOW_STATIC_MEMORY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_IOT_SHADOW_SUBSCRIPTION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_SHADOW.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/AWS_SHADOW_CONFIG_DEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/AWS/SHADOW/SRC/PRIVATE/AWS_IOT_SHADOW_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/aws/shadow/src/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_APPVERSION32.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_ATOMIC.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_INIT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_LINEAR_CONTAINERS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_LOGGING_SETUP.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_LOGGING_TASK.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/IOT_TASKPOOL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_DEFAULT_ROOT_CERTIFICATES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_DOUBLY_LINKED_LIST.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_ERROR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_LIB_INIT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_LOGGING.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_STATIC_MEMORY.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/PRIVATE/IOT_TASKPOOL_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/TYPES/IOT_NETWORK_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/INCLUDE/TYPES/IOT_TASKPOOL_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/IOT_DEVICE_METRICS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/IOT_INIT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/IOT_STATIC_MEMORY_COMMON.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/LOGGING/IOT_LOGGING.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/logging}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/LOGGING/IOT_LOGGING_TASK_DYNAMIC_BUFFERS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/logging}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/TASKPOOL/IOT_TASKPOOL.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/taskpool}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/COMMON/TASKPOOL/IOT_TASKPOOL_STATIC_MEMORY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/common/taskpool}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/INCLUDE/IOT_HTTPS_CLIENT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/INCLUDE/IOT_HTTPS_UTILS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/INCLUDE/TYPES/IOT_HTTPS_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/SRC/IOT_HTTPS_CLIENT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/SRC/IOT_HTTPS_UTILS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/HTTPS/SRC/PRIVATE/IOT_HTTPS_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/https/src/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/IOT_MQTT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/IOT_MQTT_AGENT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/IOT_MQTT_AGENT_CONFIG_DEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/IOT_MQTT_CONFIG_DEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/IOT_MQTT_LIB.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/INCLUDE/TYPES/IOT_MQTT_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/include/types}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_AGENT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_API.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_NETWORK.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_OPERATION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_SERIALIZE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_STATIC_MEMORY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_SUBSCRIPTION.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/IOT_MQTT_VALIDATE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/MQTT/SRC/PRIVATE/IOT_MQTT_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/mqtt/src/private}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/INCLUDE/IOT_JSON_UTILS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/INCLUDE/IOT_SERIALIZER.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/CBOR/IOT_SERIALIZER_TINYCBOR_DECODER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src/cbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/CBOR/IOT_SERIALIZER_TINYCBOR_ENCODER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src/cbor}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/IOT_JSON_UTILS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/IOT_SERIALIZER_STATIC_MEMORY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/JSON/IOT_SERIALIZER_JSON_DECODER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src/json}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/C_SDK/STANDARD/SERIALIZER/SRC/JSON/IOT_SERIALIZER_JSON_ENCODER.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/c_sdk/standard/serializer/src/json}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/GREENGRASS/INCLUDE/AWS_GGD_CONFIG_DEFAULTS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/greengrass/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/GREENGRASS/INCLUDE/AWS_GREENGRASS_DISCOVERY.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/greengrass/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/GREENGRASS/SRC/AWS_GREENGRASS_DISCOVERY.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/greengrass/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/GREENGRASS/SRC/AWS_HELPER_SECURE_CONNECT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/greengrass/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/GREENGRASS/SRC/AWS_HELPER_SECURE_CONNECT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/greengrass/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/INCLUDE/AWS_IOT_OTA_AGENT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/INCLUDE/AWS_IOT_OTA_TYPES.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/AWS_IOT_OTA_AGENT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/AWS_IOT_OTA_AGENT_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/AWS_IOT_OTA_INTERFACE.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/AWS_IOT_OTA_INTERFACE.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/AWS_IOT_OTA_PAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/MQTT/AWS_IOT_OTA_CBOR.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/MQTT/AWS_IOT_OTA_CBOR.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/MQTT/AWS_IOT_OTA_CBOR_INTERNAL.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/MQTT/AWS_IOT_OTA_MQTT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/AWS/OTA/SRC/MQTT/AWS_IOT_OTA_MQTT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/aws/ota/src/mqtt}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/CRYPTO/INCLUDE/IOT_CRYPTO.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/crypto/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/CRYPTO/SRC/IOT_CRYPTO.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/crypto/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/PKCS11/INCLUDE/IOT_PKCS11.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/pkcs11/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/PKCS11/SRC/IOT_PKCS11.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/pkcs11/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/TLS/INCLUDE/IOT_TLS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/tls/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/TLS/SRC/IOT_TLS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/tls/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/UTILS/INCLUDE/IOT_PKI_UTILS.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/utils/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/UTILS/INCLUDE/IOT_SYSTEM_INIT.H}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/utils/include}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/UTILS/SRC/IOT_PKI_UTILS.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/utils/src}
+  - type: File
+    attributes: {id: ..//AMAZON-FREERTOS/LIBRARIES/FREERTOS_PLUS/STANDARD/UTILS/SRC/IOT_SYSTEM_INIT.C}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: dest}
+        children:
+        - {type: Value, value: ../../../../../../../../../../amazon-freertos/libraries/freertos_plus/standard/utils/src}
+  - type: Boolean
+    attributes: {id: AWS_CLOUD_H3}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+- type: Attachments
+  children:
+  - type: DirectDependency
+    attributes: {id: AmazonHWInterface}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: AmazonHWInterface}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: AmazonHWInterface}
+- type: ElementPosition
+  attributes: {x: '993', y: '360', id: AmazonFreeRTOS}
