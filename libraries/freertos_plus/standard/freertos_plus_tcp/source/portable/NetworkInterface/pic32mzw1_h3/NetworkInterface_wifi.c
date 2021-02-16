@@ -55,11 +55,11 @@
 #include "tcpip/src/tcpip_private.h"
 #include "tcpip/src/link_list.h"
 
-#include "iot_wifi.h"
 #include "system_config.h"
 
-
 #ifdef PIC32_USE_RIO2_WIFI
+
+#include "iot_wifi.h"
 
 #define TCPIP_NETWORK_DEFAULT_INTERFACE_NAME_IDX0	"ETHMAC"
 #define TCPIP_IF_ETHMAC
