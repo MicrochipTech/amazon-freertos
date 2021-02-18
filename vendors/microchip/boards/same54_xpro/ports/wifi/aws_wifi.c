@@ -963,20 +963,19 @@ WIFIReturnCode_t WIFI_On( void )
          }
         
         wifi_handle = WDRV_WINC_Open(0, (int)NULL);
-
         if (DRV_HANDLE_INVALID == wifi_handle)
         {
             configPRINTF( ( "\r\nturning Wi-Fi On Failure\r\n" ) ); 
             xSemaphoreGive(xWiFiSemaphore);
             return eWiFiFailure;
         }
-        wifi_update();
         
+        wifi_update();
+
         /* set DNS/IP callbacks */
         registerSocketCallback( socket_cb, dns_resolve_cb);
 
         waiting_task = xTaskGetCurrentTaskHandle();
-        
         
         WDRV_WINC_SSLCTXCipherSuitesSet(&cipher_ctx, cipherSuite, 2);
         ret = WDRV_WINC_SSLActiveCipherSuitesSet(wifi_handle, &cipher_ctx, &ssl_cipher_suit_ctx_cb, &ssl_req_ecc_cb);
@@ -1016,7 +1015,13 @@ WIFIReturnCode_t WIFI_On( void )
 static void wifi_update()
 {
     
-        	    // Update the TLS cert chain on the WINC.
+        // Update the TLS cert chain on the WINC.
+        if (get_winc_buffer() == NULL)
+        {
+             configPRINTF(("ECC608 is not provision yet or not connected properly, please check...\r\n"));
+             while (1);         
+        }
+        
         if (m2m_ssl_send_certs_to_winc((uint8_t *)get_winc_buffer(),
 			(uint32_t)winc_certs_get_total_files_size((tstrTlsSrvSecHdr*)get_winc_buffer())) != M2M_SUCCESS)
         {
